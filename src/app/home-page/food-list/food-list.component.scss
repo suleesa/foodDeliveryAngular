@@ -1,0 +1,52 @@
+$backgroundColor:  rgba(255,187,115, 0.2);
+$textColor:#5e3101;
+$brightButtonColor:	 #FF5D40;
+$buttonBorderColor: #FF8973;
+$yellowBasketColor:rgba(255,187,115, 1);
+
+
+
+
+.menu{
+	display: flex;
+	flex-wrap:wrap;
+	width:1020px;
+	max-width: 100%;
+	justify-content:flex-start;
+	box-sizing:border-box;
+	margin: auto;
+	border-bottom:1px solid $textColor;
+	padding: 0;
+	margin:0 auto;
+}
+
+
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+}
+
+#modal-container {
+    position:  fixed;
+    top: 100px;
+    left: 50%;
+    width: 375px;
+    background: transparent;
+    margin-left: -187.5px;
+    text-align: center;
+    z-index: 100;
+}
+
+#overlay {
+    position: fixed;
+    top: 0px;
+    left:  0px;
+    z-index:  99;
+    background:  rgba(0,0,0,0.8);
+    width:  100%;
+    height: 100%;
+    
+}
+

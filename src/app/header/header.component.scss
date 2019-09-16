@@ -1,0 +1,147 @@
+$backgroundColor:  rgba(255,187,115, 0.2);
+$textColor:#5e3101;
+$brightButtonColor:	 #FF5D40;
+$buttonBorderColor: #FF8973;
+$yellowBasketColor:rgba(255,187,115, 1);
+
+#sections{
+	display: flex;
+	justify-content:space-between;
+    flex-wrap:wrap;
+    margin: auto;
+    padding-left: 0;
+    box-sizing:border-box;
+	opacity: 1;
+	width:600px;
+	list-style: none;
+	    	a{
+    	padding:10px 20px 10px 0;
+    	display: inline-block;
+		color:$textColor;
+    }
+}
+
+.sections__item{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+.container{
+   display: flex;
+   width:1200px;
+   margin: auto;
+
+
+}
+
+
+%header-shared{
+	display: flex;
+	justify-content:space-between;
+	padding: 30px 0px;
+	box-sizing:border-box;
+	color:$textColor;
+	flex-wrap:wrap;
+}
+
+.header-top{
+    @extend %header-shared;
+	width:1020px				;
+	margin: auto;
+	max-width: 100%
+}
+
+#logIn{
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:no-wrap;
+
+	img{
+
+	margin-right: 10px;
+	border:1px solid $brightButtonColor;
+	transition: all 0.3s ease 0s;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px $textColor;
+
+	&:active{
+		transform: translateY(5px);
+  	  		box-shadow: 0px 0 0px $textColor;
+
+		}
+	}
+}
+
+
+.arrow-up{
+	width:60px;
+	position: fixed;
+	top:40px;
+	right: 40px;
+	z-index: 10;
+}
+
+#logOut{
+	display:none;
+	flex-wrap:wrap;
+	align-items:flex-start;
+}
+
+.buttons.log{
+	justify-content:space-around;
+	flex-wrap:no-wrap;
+
+	button{
+	height: 40px;
+	box-sizing:border-box;
+	font-size: 18px;
+	padding:0 40px;
+	border-radius:5px;
+	background-color: $brightButtonColor;
+	border:1px solid $brightButtonColor;
+	color:white;
+	transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: $brightButtonColor;
+    box-shadow: 2px 2px 3px $textColor;
+    margin-left:20px;
+
+ 
+	&:active{
+		transform: translateY(5px);
+  	  		box-shadow: 0px 0 0px $textColor;
+
+		}
+	}
+}
+	
+
+.header-top__login{
+	height: 40px;
+	box-sizing:border-box;
+	font-size: 24px;
+	padding:0 40px;
+	border-radius:5px;
+	background-color: $brightButtonColor;
+	border:1px solid $brightButtonColor;
+	color:white;
+	box-shadow: 5px 5px 15px $textColor;
+	transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: $brightButtonColor;
+    box-shadow: 2px 2px 3px $textColor;
+    margin-right: 20px;
+
+    &:hover{   
+ 	 	background-color: $brightButtonColor;
+	  color:white;
+	}
+	&:active{
+		box-shadow: 0px 0 0 $textColor;
+		transform:translateY(5px)
+
+	}
+}
+
+

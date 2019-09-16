@@ -1,0 +1,37 @@
+
+    <div class='menu-item_change' >
+      <div class='icons'>
+          <img src="assets/img/edit.svg" class='item-edit'>
+          <img src="assets/img/cancel.svg" class='item-delete'>
+      </div>
+      <div class='menu-item__imgDesc_change'>
+      <img src={{soup.imgPath}} alt='barcelona' class='menu-item__img_change'>
+      <div class='menu-item__description_change'>
+        <div class='menu-item__name'>{{countedDish.dish.name}}</div>
+        <div class='menu-item__description'>
+          <p>{{countedDish.dish.description}}</p>
+          <p> {{countedDish.dish.weight}} г. </p> 
+        </div>
+        <div class="menu-item__price"> {{countedDish.dish.price}} руб. </div>
+        <div class='menu-item__amount'> 
+          <button 
+          (click)='countedDish.decreaseAmount()'
+          [disabled]='quantity<2' > - </button> {{countedDish.quantity}} шт <button (click)='countedDish.increaseAmount()'> + </button>
+        </div>
+      </div>
+      </div>
+      <div class="toppings">
+        <p>Топинги на ваш выбор</p>
+        <form >
+          <label *ngFor='let topping of countedDish.toppings' class='topping'>
+            <input 
+              type="checkbox" 
+              [checked]="topping.selected"
+              (input)="topping.selected = $event.target.checked"
+              />
+            {{topping.name}} 
+            <span class='addPrice'>{{topping.price}} руб.</span></label>
+        </form>
+      </div>
+      <button class='menu-item__order' (click) = "toOrder()">Добавить в корзину</button>
+    </div>
