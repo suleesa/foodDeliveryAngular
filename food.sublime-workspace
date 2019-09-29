@@ -1,0 +1,915 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Foo",
+				"FoodItemEditComponent\talias"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"true",
+				"true\tkeyword"
+			],
+			[
+				"lo",
+				"logOut\tmethod"
+			],
+			[
+				"RouterState",
+				"RouterStateSnapshot\tclass"
+			],
+			[
+				"promi",
+				"Promise\tvar"
+			],
+			[
+				"im",
+				"implements\tkeyword"
+			],
+			[
+				"Page",
+				"PageNotFoundComponent\talias"
+			],
+			[
+				"que",
+				"queryParamsHandling\tproperty"
+			],
+			[
+				"list",
+				"list-group"
+			],
+			[
+				"clea",
+				"clearInterval\tfunction"
+			],
+			[
+				"col-",
+				"col-xs-12"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"li",
+				"list-group-item-heading"
+			],
+			[
+				"ex",
+				"export\tkeyword"
+			],
+			[
+				"cons",
+				"constructor\tkeyword"
+			],
+			[
+				"server",
+				"serverName"
+			],
+			[
+				"set",
+				"setTimeout\tfunction"
+			],
+			[
+				"FOR",
+				"FormsModule\talias"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bac",
+				"backgroundColor"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"spac",
+				"space-around"
+			],
+			[
+				"edit",
+				"editOut"
+			],
+			[
+				"FI",
+				"first-child"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"item",
+				"item__weight"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"w",
+				"wrap"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"b",
+				"brightButtonColor"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"ba",
+				"backgroundColor"
+			],
+			[
+				"log",
+				"logOut"
+			],
+			[
+				"order",
+				"ordersHistory"
+			],
+			[
+				"tran",
+				"translateY"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"backg",
+				"backgroundColor"
+			],
+			[
+				"lit",
+				"list-style"
+			],
+			[
+				"Eve",
+				"EventEmitter\talias"
+			],
+			[
+				"In",
+				"Input\tconst"
+			],
+			[
+				"click",
+				"clickCounter"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"te",
+				"textColor"
+			],
+			[
+				"bu",
+				"buttonBorderColor"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"bod",
+				"border"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"flex-",
+				"flex-start"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"sou",
+				"sourCream"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"sty",
+				"list-style"
+			],
+			[
+				"padding-",
+				"padding-top\tproperty"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"al",
+				"text-align\tproperty"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"box-",
+				"box-sizing\tproperty"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"backgroun",
+				"background-repeat\tproperty"
+			],
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"o",
+				"order\tproperty"
+			],
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"colo",
+				"color1"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"st",
+				"list-style"
+			],
+			[
+				"a",
+				"auto\tmargin"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"new",
+				"newAddSteps"
+			],
+			[
+				"clo",
+				"color\tproperty"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"suits",
+				"suitsInx"
+			],
+			[
+				"suit",
+				"suitsInx"
+			],
+			[
+				"values",
+				"valuesInx"
+			],
+			[
+				"ck",
+				"Checkboxes"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"ta",
+				"table-cell\tdisplay"
+			],
+			[
+				"vid",
+				"video\tTag"
+			],
+			[
+				"auto",
+				"autoplay\tAttr"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app/order/order.component.ts",
+			"settings":
+			{
+				"buffer_size": 1234,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nImportJS\n--------\n\n  Thanks for installing ImportJS! Before you can start using the plugin, you also\n  need to install the `importjs` binary.\n  \n     `npm install import-js -g`\n  \n  You also might have to configure import-js\n  \n     See https://github.com/Galooshi/import-js for more information\n  \n  Open the root of your project as a folder (Project -> Add Folder to Project…)\n  \n  When you are done with that, it's time to start importing files! Whenever you\n  have undefined variables, open the Command Palette (CTRL+SHIFT+P/CMD+SHIFT+P)\n  and select \"ImportJS: fix all imports\", or \"ImportJS: import word under cursor\".\n  \n  It will be helpful to bind `import_js` to easy-to-use bindings, such as:\n  \n  ```\n  { \"keys\": [\"super+alt+i\"], \"command\": \"import_js\", \"args\": { \"command\": \"fix\" } },\n  { \"keys\": [\"super+alt+j\"], \"command\": \"import_js\", \"args\": { \"command\": \"word\" } },\n  { \"keys\": [\"super+alt+g\"], \"command\": \"import_js\", \"args\": { \"command\": \"goto\" } },\n  ```\n",
+			"settings":
+			{
+				"buffer_size": 1026,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"import help",
+				"Import Helper: Remove unused imports"
+			],
+			[
+				"importhel",
+				"Import Helper: Remove unused imports"
+			],
+			[
+				"import hel",
+				"Import Helper: Initialize / Setup / Update modules"
+			],
+			[
+				"importhe",
+				"Import Helper: Initialize / Setup / Update modules"
+			],
+			[
+				"import",
+				"Import Helper: List imports"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"fix",
+				"ImportJS: fix all imports"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rename",
+				"TypeScript: Rename"
+			],
+			[
+				"package ",
+				"Package Control: Enable Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"pci:",
+				"Package Control: Install Package"
+			],
+			[
+				"TypeScript",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indentati",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indentation",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Kate/prog/food"
+	],
+	"file_history":
+	[
+		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/app.component.ts",
+		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/auth/auth.service.ts",
+		"/Users/Kate/prog/food/src/app/home-page/home-page.component.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/counted-dish-edit/counted-dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/shared/data-storage.service.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth-interceptor.service.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.ts",
+		"/Users/Kate/prog/food/src/app/app.module.ts",
+		"/Users/Kate/prog/food/node_modules/lodash/lodash.js",
+		"/Users/Kate/prog/food/src/app/shared/forModalBox/modal.service.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.ts",
+		"/Users/Kate/prog/foodDelivery/style.scss",
+		"/Users/Kate/prog/foodDelivery/order.scss",
+		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.scss",
+		"/Users/Kate/prog/food/src/app/order/order.component.scss",
+		"/Users/Kate/prog/food/src/app/order/order.component.html",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.html",
+		"/Users/Kate/prog/food/src/app/header/header.component.ts",
+		"/Users/Kate/prog/food/src/app/header/header.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.html",
+		"/Users/Kate/Desktop/menu.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.scss",
+		"/Users/Kate/prog/food/src/app/header/header.component.html",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item.model.ts",
+		"/Users/Kate/prog/food/angular.json",
+		"/Users/Kate/prog/food/src/app/app.component.scss",
+		"/Users/Kate/prog/food/src/app/shared/spinner/spinner.component.scss",
+		"/Users/Kate/prog/food/src/app/food-list/food-item/food-item.component.html",
+		"/Users/Kate/prog/food/src/app/basket/basket.component.html",
+		"/Users/Kate/prog/food/src/app/app-routing.module.ts",
+		"/Users/Kate/prog/food/src/app/shared/counted-dish.model.ts",
+		"/Users/Kate/prog/food/src/app/app.component.html",
+		"/Users/Kate/prog/food/src/app/shared/forModalBox/dom.service.ts",
+		"/Users/Kate/prog/food/src/app/home-page/home-page.component.html",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.html",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item-edit/food-item-edit.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/home-page.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item-edit/food-item-edit.component.html",
+		"/Users/Kate/prog/food/src/app/order/order.component.ts",
+		"/Users/Kate/prog/food/src/app/test/sample.component.scss",
+		"/Users/Kate/prog/food/src/app/test/sample.component.ts",
+		"/Users/Kate/prog/food/src/app/test/sample.component.html",
+		"/Users/Kate/prog/food/src/app/app.component.ts",
+		"/Users/Kate/prog/food/src/app/order.service.ts",
+		"/Users/Kate/prog/food/src/app/test/test.component.spec.ts",
+		"/Users/Kate/prog/food/src/app/basket/basket.component.ts",
+		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.ts",
+		"/Users/Kate/prog/food/src/app/food-list/food-item/food-item.component.ts",
+		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.scss",
+		"/Users/Kate/prog/foodDelivery/order.html",
+		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.html",
+		"/Users/Kate/prog/foodDelivery/index.html",
+		"/Users/Kate/prog/food/src/app/basket/basket.component.scss",
+		"/Users/Kate/prog/unity/routing-start/src/app/app.module.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/edit-server/edit-server.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/auth-service.service.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/app.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/server/server.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/users/user/user.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/users/users.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/users/user/user.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/users/users.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/server/server.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.service.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/home/home.component.html",
+		"/Users/Kate/prog/unity/routing-start/src/app/home/home.component.ts",
+		"/Users/Kate/prog/unity/routing-start/src/app/app.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-list.component.html",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe.model.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-details/recipe-details.component.html",
+		"/Users/Kate/prog/unity/prj-start/src/app/app.module.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-list.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-details/recipe-details.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.service.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-list.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.component.html",
+		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping.service.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-list.component.html",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-item/recipe-item.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/shared/dropdown.directive.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-item/recipe-item.component.html",
+		"/Users/Kate/prog/unity/prj-start/src/app/header/header.component.html",
+		"/Users/Kate/prog/unity/directives-start/src/app/better-highlight/better-high-light.directive.ts",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/odd/odd.component.ts",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/odd/odd.component.html",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/even/even.component.html",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/game-control/game-control.component.ts",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/game-control/game-control.component.html",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/app.component.ts",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/even/even.component.ts",
+		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/package-lock.json",
+		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/server-element/server-element.component.html",
+		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/server-element/server-element.component.css",
+		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/cockpit/cockpit.component.ts",
+		"/Users/Kate/prog/unity/debugging.zip",
+		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-edit/shopping-edit.component.ts",
+		"/Users/Kate/prog/unity/prj-start/src/app/header/header.component.ts",
+		"/Users/Kate/prog/unity/prj-start/package-lock.json",
+		"/Users/Kate/prog/unity/prj-start/package.json",
+		"/Users/Kate/prog/unity/basics-assignment-3-start.zip",
+		"/Users/Kate/prog/udemy-app/package.json",
+		"/Users/Kate/prog/udemy-app/src/app/app.module.ts",
+		"/Users/Kate/prog/udemy-app/src/app/server/server.component.ts",
+		"/Users/Kate/prog/udemy-app/src/app/server/server.component.html",
+		"/Users/Kate/prog/udemy-app/src/app/servers/servers.component.html",
+		"/Users/Kate/prog/udemy-app/src/app/app.component.ts",
+		"/Users/Kate/prog/udemy-app/src/app/servers/servers.component.ts",
+		"/Users/Kate/prog/udemy-app/src/app/app.component.css",
+		"/Users/Kate/prog/udemy-app/angular.json",
+		"/Users/Kate/prog/foodDelivery/style.css",
+		"/Users/Kate/prog/foodDelivery/test.html",
+		"/Users/Kate/prog/foodDelivery/orderHystoryPersonal.html",
+		"/Users/Kate/prog/foodDelivery/orderHistoryPersonal.html",
+		"/Users/Kate/prog/food/src/app/logo/logo.component.html",
+		"/Users/Kate/prog/food/src/index.html",
+		"/Users/Kate/prog/food/src/app/logo/logo.component.ts",
+		"/Users/Kate/prog/food/src/app/logo/logo.component.scss",
+		"/Users/Kate/prog/food/src/app/logo/logo.component.spec.ts",
+		"/Users/Kate/prog/my-app/src/app/home/home.component.html",
+		"/Users/Kate/prog/my-app/src/app/app.component.ts",
+		"/Users/Kate/prog/my-app/src/app/app.component.html",
+		"/Users/Kate/prog/my-app/src/styles.scss"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/order/order.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								226
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "food.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"src/app/recipes/recipes.component.ts"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 364.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

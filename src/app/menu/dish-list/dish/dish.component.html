@@ -1,0 +1,21 @@
+<li class="menu-item">
+  <div class="icons" *ngIf='isAdmin'>
+    <img 
+      src="assets/img/edit.svg" 
+      class="item-edit" 
+      (click)="startEdit()" />
+    <img
+      src="assets/img/cancel.svg"
+      class="item-delete"
+      (click)="confirm()"
+    />
+  </div>
+  <img src="{{ dish.imgPath }}" alt="dish" class="menu-item__img" />
+  <div class="menu-item__name">{{ dish.name }}</div>
+  <div class="menu-item__description">
+    <p class="item__description">{{ dish.description }}</p>
+    <p>{{ dish.weight }} г.</p>
+  </div>
+  <div class="menu-item__price">{{ dish.price }}руб.</div>
+  <button class="menu-item__order" (click)="select()">Заказать</button>
+</li>

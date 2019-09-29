@@ -1,0 +1,90 @@
+$backgroundColor: rgba(255, 187, 115, 0.2);
+$textColor: #5e3101;
+$brightButtonColor: #ff5d40;
+$buttonBorderColor: #ff8973;
+$yellowcartColor: rgba(255, 187, 115, 1);
+
+.cart {
+    position: fixed;
+    width: 20%;
+    bottom: 20%;
+    right: 40px;
+    height: 100px;
+    bottom: 0px;
+    z-index: 20;
+
+    button {
+        text-align: center;
+        border-radius: 5px;
+        z-index: 4;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        width: 100%;
+        background-color: $yellowcartColor;
+        border: 1px solid $yellowcartColor;
+        box-shadow: 0px 15px 20px $textColor;
+
+        &:disabled {
+            display: inline-block;
+            text-align: center;
+            align-items: flex-start;
+            cursor: default;
+            background-color: rgba(192, 192, 192, 0.2);
+            box-sizing: border-box;
+            margin: 0em;
+            font: 400 11px system-ui;
+            padding: 1px 7px 2px;
+            border-width: 1px;
+            border-style: solid;
+            box-shadow: none;
+            border-color: rgb(216, 216, 216) rgb(209, 209, 209)
+                rgb(186, 186, 186);
+            color: white;
+
+            p {
+                color: white;
+                font-size: 20px;
+            }
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+        p {
+            color: $textColor;
+            font-size: 20px;
+        }
+
+        &:hover {
+            background-color: $brightButtonColor;
+            box-shadow: 0px 15px 20px $textColor;
+            transform: translateY(-7px);
+            border: none;
+            color: white;
+            p {
+                color: white;
+            }
+        }
+
+        &:disabled:hover {
+            display: inline-block;
+            text-align: center;
+            align-items: flex-start;
+            cursor: default;
+            background-color: rgba(192, 192, 192, 0.2);
+            box-sizing: border-box;
+            margin: 0em;
+            font: 400 11px system-ui;
+            padding: 1px 7px 2px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(216, 216, 216) rgb(209, 209, 209)
+                rgb(186, 186, 186);
+        }
+
+        &:active {
+            color: $yellowcartColor;
+            transform: translateY(7px);
+        }
+    }
+}

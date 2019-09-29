@@ -1,0 +1,20 @@
+<div class="order">
+  <div class="date">{{ order.date | date: 'dd/MM/yyyy' }}</div>
+  <div class="userName">Имя клиента: {{ order.name }}</div>
+  <div class="userTelephone">Телефон: {{ order.telephone }}</div>
+  <div class="userAddress">Адрес: {{ order.address }}</div>
+  <div class="guests">Количество гостей: {{ order.guestAmount }}</div>
+  <div class="price">Общая сумма заказа: {{ order.totalPrice }} рублей</div>
+  <div class="status">
+    <label
+      >Статус заказа:
+      <select #s (change)='changeStatus(s.value)'>
+        <option [value]='"waiting_confirmation"'> Ожидает подтверждения</option>
+        <option [value]='"cooking"'> Готовится</option>
+        <option [value]='"sent"'> Передан на доставку</option>
+        <option [value]='"delivered"'> Доставлен</option>
+      </select>
+    </label>
+    <div></div>
+  </div>
+</div>

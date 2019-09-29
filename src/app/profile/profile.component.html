@@ -1,0 +1,46 @@
+
+
+<app-header></app-header>
+<div *ngIf='isLoading'>
+	<app-spinner></app-spinner>
+</div>	
+<div class='personal' *ngIf='!isLoading'>
+	<form #personalForm="ngForm"
+        (ngSubmit)='onSubmit(personalForm)'>
+	    <h2>Личные данные</h2>
+	    <label for="name"> Ваше имя </label>
+	    <input 
+		    type="text" 
+		    name="name" 
+		    id='userName' 
+     		[ngModel] ='profile.userName'
+     		required
+		    placeholder="Иван Иванов">
+
+	    <label for="address"> Адрес </label>
+	    <textarea 
+		    name="address" 
+		    id='address' 
+     		[ngModel] ='profile.userAddress'
+     		required
+		    placeholder="Санкт-Петербург, Дворцовая площадь д.1"
+		    ></textarea>
+	    <label for="telephone"> Телефон </label>
+	    <input 
+		    type="text" 
+		    id='telephone' 
+		    [ngModel] ='profile.userTelephone'
+     		required
+		    name="telephone" 
+		    placeholder="+0 123 456 78 90 ">
+
+	    <button 
+	        type="submit" 
+			class='save'
+			[disabled]='!personalForm.valid'
+			>Сохранить</button>
+	</form>
+</div>
+<app-cart></app-cart>
+<app-order-list *ngIf='!isLoading' [orders]='orders'></app-order-list>
+ 

@@ -1,19 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OrderComponent } from './order/order.component'
-import { HomePageComponent } from './home-page/home-page.component'
+import { OrderCreateComponent } from './order/order-create/order-create.component';
+import { MenuComponent } from './menu/menu.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AuthGuard } from './auth/auth.guard';
+import { DishEditComponent } from './dish-edit/dish-edit.component';
+import { OrderListComponent } from './order/order-list/order-list.component';
+import { AdminOrdersComponent } from './order/admin-orders/admin-orders.component';
 
 const AppRoutes: Routes = [
-{ path:'', component: HomePageComponent},
-{ path:'order', component: OrderComponent},
-{ path: '**', redirectTo:''},
+	{ path: '', component: MenuComponent },
+	{
+		path: 'profile',
+		component: ProfileComponent,
+		canActivate: [AuthGuard]
+	},
+	{ path: 'order', component: OrderCreateComponent },
+	{ path: 'adminOrders', component: AdminOrdersComponent },
+	{ path: 'dishCreate', component: DishEditComponent },
+	{ path: 'dishEdit/:id', component: DishEditComponent },
+	{ path: '**', redirectTo: '' }
 ];
 
-
 @NgModule({
-  imports:
-    [RouterModule.forRoot(AppRoutes)],
-  exports:
-    [ RouterModule ]
+	imports: [RouterModule.forRoot(AppRoutes)],
+	exports: [RouterModule]
 })
-export class AppRoutingModule{}
+export class AppRoutingModule {}

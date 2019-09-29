@@ -1,14 +1,35 @@
-<header class='header container'>
-  <div class='header-top'>
-      <nav>
-      <ul id='sections'>
-        <li class='sections__item'><a href="#soups">Супы</a></li>
-        <li class='sections__item'><a href="#pizza">Пицца</a></li>
-        <li class='sections__item'><a href="#pasta">Паста</a></li>
-        <li class='sections__item'><a href="#main">Горячие блюда</a></li>
-        <li class='sections__item'><a href="#dessert">Десерты</a></li>
+<header class="header container">
+  <div class="header-top">
+    <nav *ngIf="mainPage">
+      <ul id="sections">
+        <li class="sections__item"><a href="#soups">Супы</a></li>
+        <li class="sections__item"><a href="#pizza">Пицца</a></li>
+        <li class="sections__item"><a href="#pasta">Паста</a></li>
+        <li class="sections__item"><a href="#main">Горячие блюда</a></li>
+        <li class="sections__item"><a href="#dessert">Десерты</a></li>
       </ul>
     </nav>
-      <button class='header-top__login'>Войти</button>
+    <button *ngIf="!mainPage" class="menu" [routerLink]="['/']">Меню</button>
+    <div class="buttons" id="logIn">
+      <button
+        class="header-top__login"
+        (click)="startAuth()"
+        *ngIf="!isAuthenticated"
+      >
+        Войти
+      </button>
     </div>
- </header>
+    <div class="buttons log" id="logOut" *ngIf="isAuthenticated">
+      <a
+        ><button class="profile" [routerLink]="['/profile']">
+          Личный кабинет
+        </button></a
+      >
+      <button class="out" (click)="onLogout()">Выйти</button>
+    </div>
+  </div>
+</header>
+<div class="buttons" *ngIf="isAdmin">
+  <button [routerLink]="['/dishCreate']">Создать новое блюдо</button>
+  <button [routerLink]="['/adminOrders']">Заказы</button>
+</div>

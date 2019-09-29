@@ -1,0 +1,34 @@
+
+<div *ngIf='isLoading'>
+	<app-spinner></app-spinner>
+</div>	
+<div class='login-register' *ngIf='!isLoading'>
+<div *ngIf='error'>
+	<p>{{error}}</p>
+		<button (click)='openAgain()' class='again'> Попробовать еще раз</button>
+	</div>
+      <form #authForm="ngForm"
+      		(ngSubmit)='onSubmit(authForm)' *ngIf='!error'>
+	    <label for='userName'>email</label>
+	    <input 
+	      	type="text" 
+	      	id='userName' 
+	      	ngModel 
+	      	name='email'
+	      	required
+	      	email>
+	    <label for='password'>пароль</label>
+	    <input 
+	      	type="password" 
+	      	id='password'
+	      	ngModel
+	      	name='password'
+	      	required
+	      	minlength="6">
+	    <button 
+	    [disabled]="!authForm.valid" >
+		{{isLoginMode ? 'Войти' : 'Зарегистироваться'}}</button>
+	    <button type='button' (click)='onSwitchMode()'> {{ isLoginMode ? 'Регистрация' : 'Вход'}}</button>
+	    <!-- <button [disabled]="!authForm.valid">Зарегистрироваться</button> -->
+	  </form>
+</div>

@@ -1,0 +1,69 @@
+$backgroundColor:  rgba(255,187,115, 0.2);
+$textColor:#5e3101;
+$brightButtonColor:	 #FF5D40;
+$buttonBorderColor: #FF8973;
+
+    .login-register{
+    	background-color: white;
+    	font-size: 18px;
+		border:1px solid $buttonBorderColor;
+		border-radius: 5px;
+		color:$textColor;
+		box-sizing:border-box;
+		z-index: 2;
+		margin:10px auto;
+		display: flex;
+		width: 400px;
+		max-width: 100%;
+		flex-direction:column;
+		align-items:center;
+		padding:40px;
+			h2{
+				margin-top: 0;
+			}
+
+   		button{
+    		width:200px;
+    		display:block;
+    		margin: 20px auto 0px auto;
+    		height: 34px;
+		    font-size: 18px;
+		    border-radius:5px;
+			background-color: $brightButtonColor;
+			border:1px solid $brightButtonColor;
+			color:white;
+			transition: all 0.3s ease 0s;
+   			cursor: pointer;
+			box-shadow: 2px 2px 3px 0 $textColor;
+			&:active{
+				box-shadow: 0px 0px 0px 0 $textColor;
+				transform:translateY(5px)
+				}
+			&:disabled{
+		    background-color: 	rgba(192,192,192, 0.2);
+		    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+		    color:rgb(216, 216, 216)
+				}
+    		}
+    	.again{
+    		height: 60px;
+    	}
+    
+		input[type='text'],
+		input[type='password']{
+		    border:1px solid $textColor;
+			border-radius: 5px;
+			}
+   		input[type='text'],input[type='password'], label{
+			display: block;
+			margin: 10px;
+			width:200px;
+			height: 26px;
+		    font-size: 20px;
+		    text-align: left;
+			}
+
+	
+		}
+
+

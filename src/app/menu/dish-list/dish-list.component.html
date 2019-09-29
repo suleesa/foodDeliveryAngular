@@ -1,0 +1,41 @@
+<div *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
+<div class='search'>
+  <label for='search'> Введите название блюда </label>
+  <input type='text' id='search' name='search' [formControl]='se'>
+</div>
+  <div class='container'>
+<div class="menu-section" *ngIf="!isLoading">
+    <h3>Супы</h3>
+</div>
+<ul class="menu" *ngIf="!isLoading">
+  <app-dish *ngFor="let dish of getSoups()" [dish]="dish"> </app-dish>
+</ul>
+<div class="menu-section" *ngIf="!isLoading">
+    <h3>Пицца</h3>
+</div>
+<ul class="menu" *ngIf="!isLoading">
+  <app-dish *ngFor="let dish of getPizzas()" [dish]="dish"> </app-dish>
+</ul>
+<div class="menu-section" *ngIf="!isLoading">
+    <h3>Паста</h3>
+</div>
+<ul class="menu" *ngIf="!isLoading">
+  <app-dish *ngFor="let dish of getPastas()" [dish]="dish"> </app-dish>
+</ul>
+<div class="menu-section" *ngIf="!isLoading">
+    <h3>Горячие блюда</h3>
+</div>
+<ul class="menu" *ngIf="!isLoading">
+  <app-dish *ngFor="let dish of getMains()" [dish]="dish"> </app-dish>
+</ul>
+<div class="menu-section" *ngIf="!isLoading">
+    <h3>Дессерты</h3>
+</div>
+<ul class="menu" *ngIf="!isLoading">
+  <app-dish *ngFor="let dish of getDesserts()" [dish]="dish"> </app-dish>
+</ul>
+<div id="modal-container" class="hidden"></div>
+<div id="overlay" (click)="removeModal()" class="hidden"></div>
+</div>

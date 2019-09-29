@@ -34,6 +34,7 @@ export class DomService {
       .rootNodes[0] as HTMLElement;
 
     // Append DOM element to the body
+    console.log(parentId)
     document.getElementById(parentId).appendChild(childDomElem);
 
   }

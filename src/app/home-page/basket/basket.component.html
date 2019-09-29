@@ -1,8 +1,0 @@
- <div class="basket" id='basket'>
-  <a [routerLink]= '["/order"]'>
-  <button [disabled]='totalPrice  === 0'>
-        <p href=#>Оформить заказ</p>    
-        <p class='basket__price' *ngIf='totalPrice > 0'> {{totalPrice}} руб.</p>
-  </button>
-  </a>
-</div>

@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+<div class="order">
+  <h1>Оформление заказа</h1>
+  <img src="assets/img/picnic-basket.svg" class="picnic" />
+  <form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)">
+    <label
+      >Имя
+      <input type="text" name="name" id="userName" [ngModel]='profile.userName' required />
+    </label>
+    <label
+      >Телефон
+      <input type="text" name="telephone" id="telephone"  [ngModel]='profile.userTelephone' required />
+    </label>
+    <label
+      >Адрес
+      <textarea
+        type="text"
+        name="address"
+        id="address"
+        required
+        minlength="6"
+        [ngModel]='profile.userAddress'
+      ></textarea>
+    </label>
+    <p>Количество персон</p>
+    <button
+      type="button"
+      class="changeAmountGuest"
+      (click)="decreaseAmountGuest()"
+      [disabled]="guestAmount < 2"
+    >
+      -
+    </button>
+    {{ guestAmount }} шт
+    <button
+      type="button"
+      class="changeAmountGuest"
+      (click)="increaseAmountGuest()"
+    >
+      +
+    </button>
+    <h3>Ваш заказ</h3>
+    <ol *ngFor="let dish of countedDishes">
+      <li>{{ dish.dish.name }}</li>
+      <span>{{ dish.dish.price }} руб.</span>
+      <button (click)="deleteDish(dish.dish)" type="button">Х</button>
+      <div class="changeAmount">
+        <button (click)="dish.decreaseAmount(); refreshPrice()" type="button">
+          -
+        </button>
+        {{ dish.quantity }} шт.
+        <button (click)="dish.increaseAmount(); refreshPrice()" type="button">
+          +
+        </button>
+      </div>
+      <h5 *ngIf="dish.toppings.length > 0">Топпинги</h5>
+      <ul *ngFor="let topping of dish.toppings">
+        <li>{{ topping.name }}</li>
+        <span>{{ topping.price }} руб.</span>
+        <button
+          type="button"
+          (click)="dish.removeTopping(topping); refreshPrice()"
+        >
+          Х
+        </button>
+      </ul>
+    </ol>
+    <h3>
+      Итого<span> {{ totalPrice }} руб.</span>
+    </h3>
+    <button
+      type="submit"
+      class="orderButton"
+      [disabled]="!orderForm.valid || totalPrice === 0"
+    >
+      Заказать
+    </button>
+  </form>
+</div>
+
+<div id="modal-container" class="hidden"></div>
+<div id="overlay" (click)="removeModal()" class="hidden"></div>

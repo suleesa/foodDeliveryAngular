@@ -1,0 +1,6 @@
+<div class="cart" id="cart">
+  <button [disabled]="isEmpty()" (click)="toOrder()">
+    <p href="#">Оформить заказ</p>
+    <p class="cart__price" *ngIf="!isEmpty()">{{ totalPrice }} руб.</p>
+  </button>
+</div>

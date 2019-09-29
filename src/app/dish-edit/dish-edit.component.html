@@ -1,0 +1,60 @@
+<div *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
+<div class="edit-item" *ngIf="!isLoading">
+  <h2>{{ isEditingMode ? 'Редактировать блюдо' : 'Создать новое блюдо' }}</h2>
+  <form #dishEdit="ngForm" (ngSubmit)="onSubmit(dishEdit)">
+    <label for="img">Адрес изображения</label>
+    <input type="text" id="img" name="img" [ngModel]="dish.imgPath" />
+    <select class="select-section" [ngModel]="dish.category" name="category">
+      <option>Супы</option>
+      <option>Пицца</option>
+      <option>Паста</option>
+      <option>Горячие блюда</option>
+      <option>Десерт</option>
+    </select>
+    <label for="name">Название</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Лагман"
+      [ngModel]="dish.name"
+    />
+    <label for="description">Описание</label>
+    <textarea
+      name="description"
+      id="description"
+      placeholder="Густой мясной суп с говядиной и домашней лапшой"
+      [ngModel]="dish.description"
+      maxlength="110"
+    ></textarea>
+    <label for="weight">Вес</label>
+    <input
+      type="number"
+      name="weight"
+      id="weight"
+      placeholder="350 г."
+      [ngModel]="dish.weight"
+    />
+    <label for="price">Стоимость</label>
+    <input
+      type="number"
+      name="price"
+      id="price"
+      placeholder="300 руб."
+      [ngModel]="dish.price"
+    />
+
+    <div *ngFor="let topping of toppings.controls; let i = index">
+      <input type="text" [formControl]="topping.controls['name']" />
+      <input type="number" [formControl]="topping.controls['price']" />
+      <button type="button" (click)="removeTopping(i)">удалить</button>
+    </div>
+
+    <button type="button" (click)="addTopping()">Добавить топпинг</button>
+    <button type="button" (click)="debug()">Debug</button>
+
+    <button>{{ isEditingMode ? 'Сохранить' : 'Добавить новое блюдо' }}</button>
+  </form>
+</div>
