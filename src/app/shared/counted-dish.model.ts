@@ -15,7 +15,7 @@ export class CountedDish {
       .reduce((a, b) => {
         return a + b;
       }, 0);
-    return this.dish.price * this.quantity + toppingsPrice;
+    return (this.dish.price + toppingsPrice) * this.quantity;
   }
 
   removeTopping(topping) {

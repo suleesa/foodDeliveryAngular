@@ -1,35 +1,46 @@
-<header class="header container">
-  <div class="header-top">
-    <nav *ngIf="mainPage">
-      <ul id="sections">
-        <li class="sections__item"><a href="#soups">Супы</a></li>
-        <li class="sections__item"><a href="#pizza">Пицца</a></li>
-        <li class="sections__item"><a href="#pasta">Паста</a></li>
-        <li class="sections__item"><a href="#main">Горячие блюда</a></li>
-        <li class="sections__item"><a href="#dessert">Десерты</a></li>
+<nav class="navbar navbar-default">
+  <div class="col-md-10 .d-block col-md-offset-1">
+    <ul id="sections" *ngIf="mainPage" class="nav navbar-nav navbar-left" id='menu' 
+      >
+      <li class="nav-item"><a href="#soups" class="nav-link">Супы</a></li>
+      <li class="nav-item"><a href="#pizza" class="nav-link">Пицца</a></li>
+      <li class="nav-item"><a href="#pasta" class="nav-link">Паста</a></li>
+      <li class="nav-item ">
+        <a href="#main" class="nav-link" id='start'>Горячие блюда</a>
+      </li>
+      <li class="nav-item "><a href="#dessert" class="nav-link">Десерты</a></li>
+    </ul>
+    <ul id="sections" *ngIf="!mainPage" class="nav navbar-nav navbar-left">
+      <li>
+        <a [routerLink]="['']" class="nav-link"><h4>Меню</h4></a>
+      </li>
+    </ul>
+    <div class="btn-toolbar navbar-right">
+      <ul class="nav navbar-nav navbar-left" *ngIf="isAuthenticated">
+        <li><a [routerLink]="['/adminOrders']" *ngIf="isAdmin"><h4>Заказы</h4></a></li>
+        <li><a [routerLink]="['/profile']"><h4>Личный кабинет</h4></a></li>
       </ul>
-    </nav>
-    <button *ngIf="!mainPage" class="menu" [routerLink]="['/']">Меню</button>
-    <div class="buttons" id="logIn">
       <button
         class="header-top__login"
         (click)="startAuth()"
+        class="btn btn-primary btn-lg"
         *ngIf="!isAuthenticated"
       >
         Войти
       </button>
-    </div>
-    <div class="buttons log" id="logOut" *ngIf="isAuthenticated">
-      <a
-        ><button class="profile" [routerLink]="['/profile']">
-          Личный кабинет
-        </button></a
+      <button
+        class="btn btn-primary btn-lg"
+        (click)="onLogout()"
+        *ngIf="isAuthenticated"
       >
-      <button class="out" (click)="onLogout()">Выйти</button>
+        Выйти
+      </button>
     </div>
   </div>
-</header>
-<div class="buttons" *ngIf="isAdmin">
-  <button [routerLink]="['/dishCreate']">Создать новое блюдо</button>
-  <button [routerLink]="['/adminOrders']">Заказы</button>
+</nav>
+
+<div *ngIf='notificationService.message' class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeNotification()">
+    <span aria-hidden="true">&times;</span></button>
+   {{notificationService.message}}
 </div>

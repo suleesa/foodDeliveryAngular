@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Order } from '../order.model';
 import { OrderService } from '../order.service';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../../auth/auth.service'
 
 @Component({
   selector: 'app-order',
@@ -9,17 +11,49 @@ import { OrderService } from '../order.service';
 })
 export class OrderComponent implements OnInit {
   @Input() order: Order;
-  constructor(private orderService: OrderService) {}
+  isAdmin: boolean = false;
+  userSub: Subscription;
 
-  ngOnInit() {}
+  constructor(
+    private orderService: OrderService,
+    private authService: AuthService
+  ) {}
+
+  ngOnInit() {
+    
+    this.userSub = this.authService.user.subscribe(user => {
+      if (user) {
+        this.isAdmin = user.isAdmin();
+      } else {
+        this.isAdmin = false;
+      }
+    });
+    console.log(this.order)
+  }
   checkStatus() {
     if (this.order.status === 'waiting_confirmation') {
       return 'Заказ ожидает подтверждения';
     }
+    if (this.order.status === 'cooking') {
+      return 'Заказ готовится';
+    }
+    if (this.order.status === 'sent') {
+      return 'Заказ передан курьеру на доставку';
+    }
+    if (this.order.status === 'waiting_confirmation') {
+      return 'Заказ доставлен';
+    }
+
   }
 
   changeStatus(s) {
-    this.order.status = s
+    this.order.status = s;
     this.orderService.updateOrder(this.order);
+  }
+
+  repeatOrder(){
+    this.order.date = new Date()
+    this.orderService.newOrder(this.order).subscribe(
+      resp => console.log(resp))
   }
 }

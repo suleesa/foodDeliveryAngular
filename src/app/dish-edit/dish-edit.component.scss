@@ -1,111 +1,16 @@
-$backgroundColor: rgba(255, 187, 115, 0.2);
-$textColor: #5e3101;
-$brightButtonColor: #ff5d40;
-$buttonBorderColor: #ff8973;
+.t{
+  margin:0 10px 0 0 
+}
 
-.edit-item {
-  font-size: 16px;
-  border: 1px solid #5e3101;
-  border-radius: 5px;
-  color: $textColor;
-  box-sizing: border-box;
-  z-index: 2;
-  margin: 10px auto;
-  display: flex;
-  width: 400px;
-  max-width: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: white;
-  overflow-y: scroll;
+.t-form{
+  margin-bottom:20px
+}
 
+.t-b{
+  display: block;
+  margin:10px 0;
+}
 
-  h2 {
-    margin-top: 0;
-  }
-
-  .select-section {
-    display: block;
-    font-size: 14px;
-    color: #5e3101;
-    padding: 5px 10px;
-    border: 1px solid $textColor;
-    border-radius: 5px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: rgba(255, 187, 115, 0.1);
-    background-image: url('../../assets/img/arrow-down.svg');
-    background-repeat: no-repeat, repeat;
-    background-position: right 2% top 50%;
-    background-size: 0.65em auto, 100%;
-    width: 300px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .select-section::-ms-expand {
-    display: none;
-  }
-  .select-section:hover {
-    border-color: $textColor;
-  }
-  .select-section:focus {
-    border-color: $textColor;
-    color: $textColor;
-    outline: none;
-  }
-  .select-css option {
-    font-weight: normal;
-    padding-left: 10px;
-  }
-  button {
-    width: 200px;
-    display: block;
-    margin: 20px auto 0px auto;
-    height: 30px;
-    font-size: 18px;
-    border-radius: 5px;
-    background-color: #ff5d40;
-    border: 1px solid #ff5d40;
-    color: white;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    box-shadow: 2px 2px 3px 0 $textColor;
-
-    &:active {
-      box-shadow: 0px 0px 0px 0 $textColor;
-      transform: translateY(5px);
-    }
-  }
-  input{
-    height: 40px;
-
-  }
-  
-  input,
-  textarea {
-    border: 1px solid #5e3101;
-    border-radius: 5px;
-    background-color: rgba(255, 187, 115, 0.1);
-    margin-bottom: 10px;
-    color: $textColor;
-    font-family: 'Merriweather';
-    display: block;
-    width: 300px;
-    font-size: 14px;
-    height: 20px;
-    box-sizing:border-box;
-    padding: 10px;
-  }
-
-  label {
-    width: 300px;
-    display: block;
-  }
-
-  textarea {
-    height: 60px;
-  }
+.btn-lg{
+  margin-top: 20px;
 }

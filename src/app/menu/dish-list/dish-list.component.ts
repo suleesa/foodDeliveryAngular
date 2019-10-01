@@ -6,6 +6,7 @@ import { ModalService } from '../../shared/forModalBox/modal.service';
 import { CountedDishEditComponent } from './counted-dish-edit/counted-dish-edit.component';
 import { Subscription } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from '../../auth/auth.service';
 
 @Component({
   selector: 'app-dish-list',
@@ -21,11 +22,14 @@ export class DishListComponent implements OnInit {
   isLoading: boolean = true;
   searchQuery: string;
   se = new FormControl(null);
+  isAdmin: boolean = false;
+  userSub: Subscription;
 
   constructor(
     private dishListService: DishListService,
     private cartService: CartService,
-    private modalService: ModalService
+    private modalService: ModalService,
+    private authService: AuthService
   ) {}
 
   ngOnInit() {
@@ -36,6 +40,13 @@ export class DishListComponent implements OnInit {
         this.filtered_dishes = this.filterDishes(q);
       } else {
         this.filtered_dishes = this.dishes;
+      }
+    });
+    this.userSub = this.authService.user.subscribe(user => {
+      if (user) {
+        this.isAdmin = user.isAdmin();
+      } else {
+        this.isAdmin = false;
       }
     });
 
@@ -95,6 +106,4 @@ export class DishListComponent implements OnInit {
     this.menuChangedSub.unsubscribe();
     this.dishSelectedSub.unsubscribe();
   }
-
-
 }

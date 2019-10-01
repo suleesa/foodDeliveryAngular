@@ -20,19 +20,19 @@ $buttonBorderColor: #ff8973;
 	position: relative;
 	box-sizing:border-box;
 
-	&:hover {
-		box-shadow: 0px 15px 20px $textColor;
-		transform: translateY(-10px);
-		z-index: 3;
+	// &:hover {
+	// 	// box-shadow: 0px 15px 20px $textColor;
+	// 	// transform: translateY(-10px);
+	// 	// z-index: 3;
 
-		.item__description {
-			height: 60px;
-			overflow: visible;
-			white-space: normal;
-		}
-	}
-	// &:nth-of-type(odd){
-	// 	margin: 20px;
+	// 	.item__description {
+	// // 		height: 60px;
+	// 		overflow: visible;
+	// // 		white-space: normal;
+	// // 	}
+	// }
+	// // &:nth-of-type(odd){
+	// // 	margin: 20px;
 	// }
 }
 
@@ -77,7 +77,7 @@ $buttonBorderColor: #ff8973;
 	font-weight: bold;
 	color: $textColor;
 	text-align: bottom;
-	height: 40px;
+	height: 60px;
 }
 .menu-item__price {
 	color: #631903;
@@ -91,9 +91,9 @@ $buttonBorderColor: #ff8973;
 }
 .item__description {
 	height: 60px;
-	//  overflow:hidden;
+	overflow:hidden;
+	 white-space: wrap;
 	text-overflow: ellipsis;
-	// white-space: nowrap
 }
 
 .menu-item__amount button {

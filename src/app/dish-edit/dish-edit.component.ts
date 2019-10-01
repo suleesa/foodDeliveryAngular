@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DataStorageService } from '../shared/data-storage.service';
 import { Dish } from '../menu/dish-list/dish.model';
 import { FormControl, FormArray, FormGroup } from '@angular/forms';
+import { NotificationService } from '../shared/notification.service'
 
 @Component({
   selector: 'app-dish-edit',
@@ -19,7 +20,8 @@ export class DishEditComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private dataStorageService: DataStorageService,
-    private router: Router
+    private router: Router,
+    private notificationService:NotificationService
   ) {}
 
   ngOnInit() {
@@ -32,6 +34,14 @@ export class DishEditComponent implements OnInit {
         this.dataStorageService.getDish(id).subscribe((dish: Dish) => {
           this.dish = dish;
           this.isLoading = false;
+          this.toppings = new FormArray(
+            dish.toppings.map(topping => {
+              return new FormGroup({
+                name: new FormControl(topping.name),
+                price: new FormControl(topping.price)
+              });
+            })
+          );
         });
       }
     });
@@ -48,10 +58,6 @@ export class DishEditComponent implements OnInit {
 
   removeTopping(i) {
     this.toppings.removeAt(i);
-  }
-
-  debug() {
-    console.log(this.toppings.value)
   }
 
   onSubmit(form) {
@@ -80,4 +86,6 @@ export class DishEditComponent implements OnInit {
       });
     }
   }
+
+  
 }

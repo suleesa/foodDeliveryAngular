@@ -1,7 +1,7 @@
-$backgroundColor: rgba(255, 187, 115, 0.2);
-$textColor: #5e3101;
-$brightButtonColor: #ff5d40;
-$buttonBorderColor: #ff8973;
+// $backgroundColor: rgba(255, 187, 115, 0.2);
+// $textColor: #5e3101;
+// $brightButtonColor: #ff5d40;
+// $buttonBorderColor: #ff8973;
 
 #modal-container {
   position: fixed;
@@ -12,6 +12,7 @@ $buttonBorderColor: #ff8973;
   margin-left: -187.5px;
   text-align: center;
   z-index: 100;
+
 }
 
 #overlay {
@@ -31,120 +32,39 @@ $buttonBorderColor: #ff8973;
   display: block;
 }
 
-button {
-  background-color: $backgroundColor;
-  width: 20px;
-  height: 20px;
-  border: 1px solid $backgroundColor;
-  border-radius: 5px;
-  box-shadow: 1px 1px 0 0 $textColor;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
+
+.dishName {
+margin:0 10px 0 0;
 }
 
-.order {
-  color: $textColor;
-  margin: 100px auto;
-  width: 50%;
-  border: 2px solid $textColor;
-  font-size: 16px;
-  border-radius: 5px;
-  position: relative;
-
-  .picnic {
-    width: 140px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  h3 {
-    margin: 20px;
-  }
-  h1 {
-    text-align: left;
-    margin-left: 20px;
-  }
-  label,
-  p,
-  input[type='text'],
-  textarea {
-    display: block;
-    margin: 0 20px;
-  }
-
-  input[type='text'] {
-    //background-color: rgba(255,187,115, 0.1);
-    margin: 5px 0;
-    height: 30px;
-    border-radius: 5px;
-  }
-  label {
-    padding: 0;
-  }
-
-  textarea {
-    height: 60px;
-    width: 200px;
-    margin: 5px 0;
-    //background-color: rgba(255,187,115, 0.1);
-    //margin-left: 20px;
-    border-radius: 5px;
-  }
-  .orderButton {
-    margin: 0 20px 20px 20px;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-    background-color: $brightButtonColor;
-    border-radius: 5px;
-    width: 200px;
-    height: 40px;
-
-    &:disabled {
-      background-color: rgba(192, 192, 192, 0.2);
-      box-sizing: border-box;
-      margin: 20px 40px;
-      padding: 1px 7px 2px;
-      border-width: 1px;
-      border-style: solid;
-      border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-      color: white;
-    }
-  }
-
-  .changeAmount {
-    display: inline-block;
-    width: 50%;
-  }
-
-  ol {
-    margin: 20px;
-    list-style: none;
-    padding: 0;
-    border-top: 1px solid $textColor;
-    margin-bottom: 0;
-
-    span {
-      margin-right: 20px;
-    }
-
-    li {
-      display: inline-block;
-      width: 35%;
-      margin: 5px 0;
-    }
-
-    h5 {
-      margin: 0;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        font-size: 12px;
-        margin: 0;
-      }
-    }
-  }
+.dishPrice, .t{
+margin:0 10px;
 }
+
+.dishAmount{
+margin:0 10px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px
+}
+
+.t-list{
+  margin:5px 0;
+}
+.tt{
+  margin:10px 0;
+}
+.t-name{
+  width:200px
+}
+.t-price{
+  width:50px
+}
+
+.glyphicon{
+  margin:0 5px
+}
+

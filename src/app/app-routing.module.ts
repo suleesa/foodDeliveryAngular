@@ -23,7 +23,13 @@ const AppRoutes: Routes = [
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(AppRoutes)],
+	imports: [
+		RouterModule.forRoot(AppRoutes, {
+			useHash: false,
+			anchorScrolling: 'enabled',
+			onSameUrlNavigation: 'reload'
+		})
+	],
 	exports: [RouterModule]
 })
 export class AppRoutingModule {}

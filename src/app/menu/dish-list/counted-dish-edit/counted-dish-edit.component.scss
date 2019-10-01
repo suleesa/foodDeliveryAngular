@@ -5,13 +5,11 @@ $buttonBorderColor: #ff8973;
 
 .menu-item_change {
 	overflow: scroll;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	border: 1px solid $brightButtonColor;
 	border-radius: 5px;
 	width: 500px;
-
+	max-width: 100%;
+	max-height: 100%;
 	box-sizing: border-box;
 	padding: 30px;
 	background-color: white;
@@ -28,7 +26,9 @@ $buttonBorderColor: #ff8973;
 	justify-content: space-between;
 }
 .menu-item__img_change {
-	width: 40%;
+	width: 50%;
+	align-self: flex-start;
+	margin-bottom: 20px;
 }
 
 .menu-item__name {
@@ -36,30 +36,32 @@ $buttonBorderColor: #ff8973;
 	font-weight: bold;
 	color: $textColor;
 	text-align: bottom;
-	height: 40px;
-		text-align: left;
-
+	max-height: 80px;
+	text-align: left;
 }
 
 // .addPrice {
 // 	text-align: right;
 // 	font-weight: bold;
 // }
-.menu-item__description{
+.menu-item__description {
 	text-align: left;
+	p {
+		margin-top: 20px;
+	}
 }
-.menu-item__description_change{
-	width:55%;
+.menu-item__description_change {
+	width: 45%;
 	display: flex;
-	flex-direction:column;
-	flex-align:flex-start;
-	justify-content:space-between
+	flex-direction: column;
+	flex-align: flex-start;
+	justify-content: space-between;
 }
-.toppings p{
-	text-align: left;
-	font-size: 18px;
-	font-weight: bold;
-}
+// .toppings p{
+// 	text-align: left;
+// 	font-size: 18px;
+// 	font-weight: bold;
+// }
 .topping{
 	display: flex;
 	flex-wrap:wrap;
@@ -100,7 +102,7 @@ $buttonBorderColor: #ff8973;
 }
 
 .menu-item__order {
-	font-size: 18px;
+	font-size: 20px;
 	padding: 10px;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -117,17 +119,17 @@ $buttonBorderColor: #ff8973;
 }
 .menu-item__amount {
 	margin-right: auto;
-}
-.menu-item__amount button {
-	background-color: $backgroundColor;
-	width: 20px;
-	height: 20px;
-	border: 1px solid $backgroundColor;
-	border-radius: 5px;
-	box-shadow: 1px 1px 0 0 $textColor;
-	transition: all 0.3s ease 0s;
-	cursor: pointer;
-	text-align: left;
+
+	// .menu-item__amount button {
+	// 	background-color: $backgroundColor;
+	// 	width: 20px;
+	// 	height: 20px;
+	// 	border: 1px solid $backgroundColor;
+	// 	border-radius: 5px;
+	// 	box-shadow: 1px 1px 0 0 $textColor;
+	// 	transition: all 0.3s ease 0s;
+	// 	cursor: pointer;
+	// 	text-align: left;
 
 	&:active {
 		transform: translateY(2px);
@@ -139,6 +141,24 @@ $buttonBorderColor: #ff8973;
 	font-weight: bold;
 	font-size: 18px;
 	margin-bottom: 10px;
-		text-align: left;
+	text-align: left;
+}
+.form-check-input,.form-check-label{
+	margin-right:10px;
+}
+.btn-primary{
+	margin-top: 20px;
+}
 
+@media screen and (max-width: 500px) {
+	.menu-item__imgDesc_change {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.menu-item__img_change {
+		width: 100%;
+	}
+	.menu-item__description_change {
+		width: 100%;
+	}
 }

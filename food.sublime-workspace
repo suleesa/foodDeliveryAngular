@@ -4,8 +4,172 @@
 		"selected_items":
 		[
 			[
+				"btn-",
+				"btn-warning"
+			],
+			[
+				"list",
+				"list-group-item"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"navbar",
+				"navbar-right"
+			],
+			[
+				"card-",
+				"card-body"
+			],
+			[
+				"btn",
+				"btn-lg"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"filte",
+				"filtered_dishes\tproperty"
+			],
+			[
+				"o",
+				"order\tproperty"
+			],
+			[
+				"Order",
+				"OrderService\tsource_modules"
+			],
+			[
+				"refreshPr",
+				"refreshProfile\tmethod"
+			],
+			[
+				"re",
+				"removeItem\tmethod"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"c",
+				"countedDishes"
+			],
+			[
+				"Pro",
+				"Profile\talias"
+			],
+			[
+				"is",
+				"isEditingMode"
+			],
+			[
+				"e",
+				"environment\tsource_modules"
+			],
+			[
+				"os",
+				"orders\tproperty"
+			],
+			[
+				"orde",
+				"order.service\tscript"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ca",
+				"category\tparameter"
+			],
+			[
+				"Dat",
+				"DataStorageService\tsource_modules"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"main",
+				"mainPage"
+			],
+			[
+				"ne",
+				"newProfile\tlet"
+			],
+			[
+				"p",
+				"profileService\tproperty"
+			],
+			[
 				"Foo",
-				"FoodItemEditComponent\talias"
+				"FoodItem\tsource_modules"
+			],
+			[
+				"dat",
+				"DataStorageService\talias"
+			],
+			[
+				"new",
+				"newFoodItems\tlet"
+			],
+			[
+				"Mo",
+				"ModalService\tsource_modules"
+			],
+			[
+				"pr",
+				"private\tkeyword"
+			],
+			[
+				"fo",
+				"food-item-edit.component\tscript"
+			],
+			[
+				"pro",
+				"profile.service\tscript"
+			],
+			[
+				"u",
+				"userAddress"
+			],
+			[
+				"user",
+				"userName"
+			],
+			[
+				"te",
+				"telephone"
+			],
+			[
+				"personal",
+				"personalForm"
+			],
+			[
+				"Auth",
+				"AuthService\tsource_modules"
+			],
+			[
+				"g",
+				"guestAmount"
 			],
 			[
 				"r",
@@ -40,10 +204,6 @@
 				"queryParamsHandling\tproperty"
 			],
 			[
-				"list",
-				"list-group"
-			],
-			[
 				"clea",
 				"clearInterval\tfunction"
 			],
@@ -58,10 +218,6 @@
 			[
 				"form-",
 				"form-group"
-			],
-			[
-				"max",
-				"max-height\tproperty"
 			],
 			[
 				"li",
@@ -92,10 +248,6 @@
 				"onclick\tAttr"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"fon",
 				"font-size"
 			],
@@ -106,10 +258,6 @@
 			[
 				"margin-",
 				"margin-bottom"
-			],
-			[
-				"ma",
-				"margin-right"
 			],
 			[
 				"spac",
@@ -124,20 +272,12 @@
 				"first-child"
 			],
 			[
-				"margin",
-				"margin-bottom\tproperty"
-			],
-			[
 				"op",
 				"option\tTag"
 			],
 			[
 				"item",
 				"item__weight"
-			],
-			[
-				"c",
-				"center"
 			],
 			[
 				"co",
@@ -152,10 +292,6 @@
 				"margin-right"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"w",
 				"wrap"
 			],
@@ -166,10 +302,6 @@
 			[
 				"b",
 				"brightButtonColor"
-			],
-			[
-				"p",
-				"password"
 			],
 			[
 				"ba",
@@ -220,20 +352,8 @@
 				"font-size"
 			],
 			[
-				"te",
-				"textColor"
-			],
-			[
 				"bu",
 				"buttonBorderColor"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"border",
-				"border-box"
 			],
 			[
 				"font",
@@ -246,10 +366,6 @@
 			[
 				"bod",
 				"border"
-			],
-			[
-				"fo",
-				"form\tTag"
 			],
 			[
 				"font-",
@@ -340,10 +456,6 @@
 				"container"
 			],
 			[
-				"o",
-				"order\tproperty"
-			],
-			[
 				"bo",
 				"border\tproperty"
 			],
@@ -380,10 +492,6 @@
 				"clearfix"
 			],
 			[
-				"new",
-				"newAddSteps"
-			],
-			[
 				"clo",
 				"color\tproperty"
 			],
@@ -406,59 +514,11 @@
 			[
 				"ck",
 				"Checkboxes"
-			],
-			[
-				"get",
-				"getElementById"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"padd",
-				"padding-bottom\tproperty"
-			],
-			[
-				"ta",
-				"table-cell\tdisplay"
-			],
-			[
-				"vid",
-				"video\tTag"
-			],
-			[
-				"auto",
-				"autoplay\tAttr"
-			],
-			[
-				"fi",
-				"figure\tTag"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/order/order.component.ts",
-			"settings":
-			{
-				"buffer_size": 1234,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nImportJS\n--------\n\n  Thanks for installing ImportJS! Before you can start using the plugin, you also\n  need to install the `importjs` binary.\n  \n     `npm install import-js -g`\n  \n  You also might have to configure import-js\n  \n     See https://github.com/Galooshi/import-js for more information\n  \n  Open the root of your project as a folder (Project -> Add Folder to Project…)\n  \n  When you are done with that, it's time to start importing files! Whenever you\n  have undefined variables, open the Command Palette (CTRL+SHIFT+P/CMD+SHIFT+P)\n  and select \"ImportJS: fix all imports\", or \"ImportJS: import word under cursor\".\n  \n  It will be helpful to bind `import_js` to easy-to-use bindings, such as:\n  \n  ```\n  { \"keys\": [\"super+alt+i\"], \"command\": \"import_js\", \"args\": { \"command\": \"fix\" } },\n  { \"keys\": [\"super+alt+j\"], \"command\": \"import_js\", \"args\": { \"command\": \"word\" } },\n  { \"keys\": [\"super+alt+g\"], \"command\": \"import_js\", \"args\": { \"command\": \"goto\" } },\n  ```\n",
-			"settings":
-			{
-				"buffer_size": 1026,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -471,6 +531,114 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"immpo",
+				"Import Helper: Update source modules"
+			],
+			[
+				"rena",
+				"TypeScript: Rename"
+			],
+			[
+				"import",
+				"Import Helper: Update source modules"
+			],
+			[
+				"rename",
+				"TypeScript: Rename"
+			],
+			[
+				"impo",
+				"Import Helper: Remove unused imports"
+			],
+			[
+				"renma",
+				"TypeScript: Rename"
+			],
+			[
+				"impor",
+				"Import Helper: Remove unused imports"
+			],
+			[
+				"prettier",
+				"Preferences: JsPrettier Settings - Default"
+			],
+			[
+				"renam",
+				"TypeScript: Rename"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"jsprettier",
+				"Preferences: JsPrettier Settings - Default"
+			],
+			[
+				"jspe",
+				"JsPrettier: Format Code"
+			],
+			[
+				"js",
+				"JsPrettier: Format Code"
+			],
+			[
+				"jspr",
+				"JsPrettier: Format Code"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"jsp",
+				"JsPrettier: Format Code"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"cool",
+				"CoolFormat: Selected Format"
+			],
+			[
+				"coolformat",
+				"CoolFormat: Formatter Settings"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"",
+				"Format: Javascript"
+			],
+			[
+				"jav",
+				"Format: Javascript"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"packa",
 				"Package Control: Remove Package"
@@ -492,10 +660,6 @@
 				"Import Helper: Initialize / Setup / Update modules"
 			],
 			[
-				"import",
-				"Import Helper: List imports"
-			],
-			[
 				"package",
 				"Package Control: List Packages"
 			],
@@ -506,14 +670,6 @@
 			[
 				"fix",
 				"ImportJS: fix all imports"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"rename",
-				"TypeScript: Rename"
 			],
 			[
 				"package ",
@@ -530,14 +686,6 @@
 			[
 				"TypeScript",
 				"Set Syntax: AppleScript"
-			],
-			[
-				"ind",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"inde",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"in",
@@ -577,138 +725,155 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kate/prog/food"
+		"/Users/Kate/prog/food",
+		"/Users/Kate/prog/food/src",
+		"/Users/Kate/prog/food/src/app",
+		"/Users/Kate/prog/food/src/app/auth",
+		"/Users/Kate/prog/food/src/app/dish-edit",
+		"/Users/Kate/prog/food/src/app/header",
+		"/Users/Kate/prog/food/src/app/menu",
+		"/Users/Kate/prog/food/src/app/menu/cart",
+		"/Users/Kate/prog/food/src/app/menu/dish-list",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/counted-dish-edit",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish",
+		"/Users/Kate/prog/food/src/app/order",
+		"/Users/Kate/prog/food/src/app/order/admin-orders",
+		"/Users/Kate/prog/food/src/app/order/order",
+		"/Users/Kate/prog/food/src/app/order/order-create",
+		"/Users/Kate/prog/food/src/app/profile",
+		"/Users/Kate/prog/food/src/app/shared",
+		"/Users/Kate/prog/food/src/assets"
 	],
 	"file_history":
 	[
-		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/app.component.ts",
-		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/auth/auth.service.ts",
-		"/Users/Kate/prog/food/src/app/home-page/home-page.component.ts",
-		"/Users/Kate/prog/food/src/app/auth/auth.component.ts",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/counted-dish-edit/counted-dish-edit.component.ts",
-		"/Users/Kate/prog/food/src/app/shared/data-storage.service.ts",
-		"/Users/Kate/prog/food/src/app/auth/auth-interceptor.service.ts",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.scss",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.html",
+		"/Users/Kate/prog/food/src/app/order/order-create/order-create.component.scss",
+		"/Users/Kate/prog/food/src/app/order/order-create/order-create.component.html",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish-list.component.html",
+		"/Users/Kate/prog/food/src/app/profile/profile.component.html",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish/dish.component.scss",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish-list.component.scss",
+		"/Users/Kate/prog/food/src/app/header/header.component.ts",
+		"/Users/Kate/prog/food/src/app/profile/profile.component.scss",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish/dish.component.html",
+		"/Users/Kate/prog/food/src/app/header/header.component.html",
+		"/Users/Kate/prog/food/src/app/header/header.component.scss",
+		"/Users/Kate/prog/food/angular.json",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish-list.component.ts",
 		"/Users/Kate/prog/food/src/app/app.module.ts",
-		"/Users/Kate/prog/food/node_modules/lodash/lodash.js",
-		"/Users/Kate/prog/food/src/app/shared/forModalBox/modal.service.ts",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.ts",
-		"/Users/Kate/prog/foodDelivery/style.scss",
-		"/Users/Kate/prog/foodDelivery/order.scss",
-		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.scss",
+		"/Users/Kate/prog/food/src/app/order/order-create/order-create.component.ts",
+		"/Users/Kate/prog/food/src/app/order/order.service.ts",
+		"/Users/Kate/prog/food/src/app/order/order/order.component.ts",
+		"/Users/Kate/prog/food/src/app/profile/profile.component.ts",
+		"/Users/Kate/prog/food/src/app/order/order-list/order-list.component.ts",
+		"/Users/Kate/prog/food/src/app/dish-edit/dish-edit.component.html",
+		"/Users/Kate/prog/food/src/app/dish-edit/dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/order/admin-orders/admin-orders.component.ts",
+		"/Users/Kate/prog/food/src/app/order/admin-orders/admin-orders.component.html",
+		"/Users/Kate/prog/food/src/app/order/order-create.component.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth.service.ts",
+		"/Users/Kate/prog/food/src/app/order/order/order.component.html",
+		"/Users/Kate/prog/food/src/app/order/order/order.component.scss",
+		"/Users/Kate/prog/food/src/app/app-routing.module.ts",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/counted-dish-edit/counted-dish-edit.component.html",
+		"/Users/Kate/prog/food/src/app/order/order-list/order-list.component.scss",
+		"/Users/Kate/prog/food/src/app/shared/data-storage.service.ts",
+		"/Users/Kate/prog/food/src/app/order/order.model.ts",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/counted-dish-edit/counted-dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/cart.service.ts",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish/dish.component.ts",
+		"/Users/Kate/prog/food/src/app/profile/profile.model.ts",
+		"/Users/Kate/prog/food/src/app/menu/cart/cart.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/cart/cart.service.ts",
+		"/Users/Kate/prog/food/src/app/order/order-list/order-list.component.html",
+		"/Users/Kate/prog/food/src/app/auth/user.model.ts",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish.model.ts",
+		"/Users/Kate/prog/food/migrate.js",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/dish-list.service.ts",
+		"/Users/Kate/prog/food/src/app/order/order-create.component.html",
+		"/Users/Kate/prog/foodDelivery/index.html",
+		"/Users/Kate/prog/foodDelivery/orderHistoryPersonal.html",
+		"/Users/Kate/prog/food/src/app/order.service.ts",
+		"/Users/Kate/prog/food/src/app/basket.service.ts",
 		"/Users/Kate/prog/food/src/app/order/order.component.scss",
 		"/Users/Kate/prog/food/src/app/order/order.component.html",
-		"/Users/Kate/prog/food/src/app/auth/auth.component.html",
-		"/Users/Kate/prog/food/src/app/header/header.component.ts",
-		"/Users/Kate/prog/food/src/app/header/header.component.scss",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.html",
-		"/Users/Kate/Desktop/menu.ts",
-		"/Users/Kate/prog/food/src/app/auth/auth.component.scss",
-		"/Users/Kate/prog/food/src/app/header/header.component.html",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item.model.ts",
-		"/Users/Kate/prog/food/angular.json",
+		"/Users/Kate/prog/food/src/app/menu/dish-list/counted-dish-edit/counted-dish-edit.component.scss",
+		"/Users/Kate/prog/foodDelivery/style.scss",
+		"/Users/Kate/prog/food/src/app/dish-edit/dish-edit.component.scss",
+		"/Users/Kate/prog/food/src/app/menu/menu.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/counted-dish-edit/counted-dish-edit.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/counted-dish-edit/counted-dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/dish-list.component.ts",
+		"/Users/Kate/prog/food/src/app/shared/are-you-sure/are-you-sure.component.ts",
+		"/Users/Kate/prog/food/src/app/shared/counted-dish.model.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/counted-dish-edit/counted-dish-edit.component.scss",
+		"/Users/Kate/prog/food/src/app/menu/food-list/counted-dish-edit/selectableTopping.interface.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/dish-list.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/dish/dish.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-list.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-list.service.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-item/food-item.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/dish.model.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/dish/dish.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-list.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-list.component.scss",
+		"/Users/Kate/prog/food/src/app/shared/are-you-sure/are-you-sure.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-item/dish.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-item/dish.component.html",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-item/dish.component.scss",
+		"/Users/Kate/prog/food/src/app/menu/food-list/toppings.interface.ts",
+		"/Users/Kate/prog/food/src/app/menu/food-list/food-item/food-item-edit.service.ts",
+		"/Users/Kate/prog/food/src/app/app.component.ts",
+		"/Users/Kate/prog/food/src/app/menu/menu.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/menu.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/home-page.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/cart/cart.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/cart/cart.component.html",
+		"/Users/Kate/Library/Application Support/Sublime Text 3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/Users/Kate/Library/Application Support/Sublime Text 3/Packages/User/JsPrettier.sublime-settings",
+		"/Users/Kate/prog/food/src/app/home-page/cart/cart.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/home-page.component.html",
+		"/Users/Kate/prog/food/src/app/shared/are-you-sure/are-you-sure.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/counted-dish-edit/counted-dish-edit.component.scss",
 		"/Users/Kate/prog/food/src/app/app.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/counted-dish-edit/counted-dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.ts",
+		"/Users/Kate/prog/food/src/app/order/order.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/counted-dish-edit/selectableTopping.interface.ts",
+		"/Users/Kate/prog/food/src/app/app.component.html",
+		"/Users/Kate/prog/food/src/app/food-item-edit/dish-edit.component.scss",
+		"/Users/Kate/prog/food/src/app/food-item-edit/dish-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item.component.html",
+		"/Users/Kate/prog/food/src/app/food-item-edit/food-item-edit.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item/food-item-edit.service.ts",
+		"/Users/Kate/prog/food/src/app/food-item-edit/food-item-edit.component.html",
+		"/Users/Kate/prog/food/src/app/profile/profile.service.ts",
+		"/Users/Kate/prog/food/src/app/shared/spinner/spinner.component.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.service.ts",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.html",
 		"/Users/Kate/prog/food/src/app/shared/spinner/spinner.component.scss",
+		"/Users/Kate/prog/food/src/app/auth/auth.component.ts",
+		"/Users/Kate/Library/Application Support/Sublime Text 3/Packages/CoolFormat/CoolFormatLib/CoolFormatConfig.cfconfig",
+		"/Users/Kate/prog/food/src/app/food-item-edit/food-item-edit.component.scss",
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item.model.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth.guard.ts",
+		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/app.component.ts",
+		"/Users/Kate/prog/unity/auth-07-autologin-autologout/src/app/auth/auth.service.ts",
+		"/Users/Kate/prog/food/src/app/auth/auth-interceptor.service.ts",
+		"/Users/Kate/prog/food/node_modules/lodash/lodash.js",
+		"/Users/Kate/prog/food/src/app/shared/forModalBox/modal.service.ts",
+		"/Users/Kate/prog/foodDelivery/order.scss",
+		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.scss",
+		"/Users/Kate/Desktop/menu.ts",
 		"/Users/Kate/prog/food/src/app/food-list/food-item/food-item.component.html",
 		"/Users/Kate/prog/food/src/app/basket/basket.component.html",
-		"/Users/Kate/prog/food/src/app/app-routing.module.ts",
-		"/Users/Kate/prog/food/src/app/shared/counted-dish.model.ts",
-		"/Users/Kate/prog/food/src/app/app.component.html",
 		"/Users/Kate/prog/food/src/app/shared/forModalBox/dom.service.ts",
-		"/Users/Kate/prog/food/src/app/home-page/home-page.component.html",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.html",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item-edit/food-item-edit.component.scss",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-list.component.scss",
-		"/Users/Kate/prog/food/src/app/home-page/home-page.component.scss",
-		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item-edit/food-item-edit.component.html",
-		"/Users/Kate/prog/food/src/app/order/order.component.ts",
-		"/Users/Kate/prog/food/src/app/test/sample.component.scss",
-		"/Users/Kate/prog/food/src/app/test/sample.component.ts",
-		"/Users/Kate/prog/food/src/app/test/sample.component.html",
-		"/Users/Kate/prog/food/src/app/app.component.ts",
-		"/Users/Kate/prog/food/src/app/order.service.ts",
-		"/Users/Kate/prog/food/src/app/test/test.component.spec.ts",
-		"/Users/Kate/prog/food/src/app/basket/basket.component.ts",
-		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.ts",
-		"/Users/Kate/prog/food/src/app/home-page/basket/basket.component.ts",
-		"/Users/Kate/prog/food/src/app/food-list/food-item/food-item.component.ts",
-		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.scss",
-		"/Users/Kate/prog/foodDelivery/order.html",
-		"/Users/Kate/prog/food/src/app/food-list/food-item-edit/food-item-edit.component.html",
-		"/Users/Kate/prog/foodDelivery/index.html",
-		"/Users/Kate/prog/food/src/app/basket/basket.component.scss",
-		"/Users/Kate/prog/unity/routing-start/src/app/app.module.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/edit-server/edit-server.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/auth-service.service.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/app.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/server/server.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/users/user/user.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/users/users.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/users/user/user.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/users/users.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/server/server.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/servers/servers.service.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/home/home.component.html",
-		"/Users/Kate/prog/unity/routing-start/src/app/home/home.component.ts",
-		"/Users/Kate/prog/unity/routing-start/src/app/app.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-list.component.html",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe.model.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-details/recipe-details.component.html",
-		"/Users/Kate/prog/unity/prj-start/src/app/app.module.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-list.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-details/recipe-details.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.service.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-list.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.component.html",
-		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping.service.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-list.component.html",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-item/recipe-item.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipes.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/shared/dropdown.directive.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/recipes/recipe-list/recipe-item/recipe-item.component.html",
-		"/Users/Kate/prog/unity/prj-start/src/app/header/header.component.html",
-		"/Users/Kate/prog/unity/directives-start/src/app/better-highlight/better-high-light.directive.ts",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/odd/odd.component.ts",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/odd/odd.component.html",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/even/even.component.html",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/game-control/game-control.component.ts",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/game-control/game-control.component.html",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/app.component.ts",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/src/app/even/even.component.ts",
-		"/Users/Kate/prog/unity/cmp-databinding-assignment-start/package-lock.json",
-		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/server-element/server-element.component.html",
-		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/server-element/server-element.component.css",
-		"/Users/Kate/prog/unity/cmp-databinding-start/src/app/cockpit/cockpit.component.ts",
-		"/Users/Kate/prog/unity/debugging.zip",
-		"/Users/Kate/prog/unity/prj-start/src/app/shopping-list/shopping-edit/shopping-edit.component.ts",
-		"/Users/Kate/prog/unity/prj-start/src/app/header/header.component.ts",
-		"/Users/Kate/prog/unity/prj-start/package-lock.json",
-		"/Users/Kate/prog/unity/prj-start/package.json",
-		"/Users/Kate/prog/unity/basics-assignment-3-start.zip",
-		"/Users/Kate/prog/udemy-app/package.json",
-		"/Users/Kate/prog/udemy-app/src/app/app.module.ts",
-		"/Users/Kate/prog/udemy-app/src/app/server/server.component.ts",
-		"/Users/Kate/prog/udemy-app/src/app/server/server.component.html",
-		"/Users/Kate/prog/udemy-app/src/app/servers/servers.component.html",
-		"/Users/Kate/prog/udemy-app/src/app/app.component.ts",
-		"/Users/Kate/prog/udemy-app/src/app/servers/servers.component.ts",
-		"/Users/Kate/prog/udemy-app/src/app/app.component.css",
-		"/Users/Kate/prog/udemy-app/angular.json",
-		"/Users/Kate/prog/foodDelivery/style.css",
-		"/Users/Kate/prog/foodDelivery/test.html",
-		"/Users/Kate/prog/foodDelivery/orderHystoryPersonal.html",
-		"/Users/Kate/prog/foodDelivery/orderHistoryPersonal.html",
-		"/Users/Kate/prog/food/src/app/logo/logo.component.html",
-		"/Users/Kate/prog/food/src/index.html",
-		"/Users/Kate/prog/food/src/app/logo/logo.component.ts",
-		"/Users/Kate/prog/food/src/app/logo/logo.component.scss",
-		"/Users/Kate/prog/food/src/app/logo/logo.component.spec.ts",
-		"/Users/Kate/prog/my-app/src/app/home/home.component.html",
-		"/Users/Kate/prog/my-app/src/app/app.component.ts",
-		"/Users/Kate/prog/my-app/src/app/app.component.html",
-		"/Users/Kate/prog/my-app/src/styles.scss"
+		"/Users/Kate/prog/food/src/app/home-page/food-list/food-item-edit/food-item-edit.component.scss"
 	],
 	"find":
 	{
@@ -719,6 +884,23 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src",
+			"/Users/Kate/prog/food/src/app",
+			"<open files>",
+			"/Users/Kate/prog/food/src/app/menu/dish-list/counted-dish-edit",
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src/app/menu/food-list",
+			"/Users/Kate/prog/food/src/app/menu/food-list/dish",
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src/app/home-page/cart",
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src",
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src",
+			"/Users/Kate/prog/food/src/app",
+			"/Users/Kate/prog/food/src",
+			"/Users/Kate/prog/food/src/app"
 		]
 	},
 	"find_state":
@@ -726,6 +908,90 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"class",
+			"icons",
+			"nav",
+			"class",
+			"localStorage",
+			"routerLink",
+			"fetchMenu",
+			"order-create.component",
+			"order.component",
+			"root",
+			"http",
+			"OrderToServer",
+			"edit",
+			"лосось",
+			"%;\n",
+			"main",
+			"contain",
+			"category",
+			"суп",
+			"в",
+			"Пицца",
+			"паста",
+			"суп",
+			"soup",
+			"DishListService",
+			"DishList",
+			"food-list",
+			"foodList",
+			"FoodListComponent",
+			"food-list.service",
+			"deleteFoodItem",
+			"getSoups",
+			"setFoodItems",
+			"dishSelected",
+			"soup",
+			"food-item",
+			"food-item.model",
+			"food-item.model.ts",
+			"home-page",
+			"toOrder",
+			"tab",
+			"basket",
+			"getOrder",
+			"deleteOneItemFromOrder",
+			"deleteDish",
+			"deleteOneItemFromOrder",
+			"basket",
+			"basket.service",
+			"order.service",
+			"OrderService",
+			"foodItemorde",
+			"food-item-edit",
+			"DishEdit",
+			";\n",
+			"            }",
+			"/',",
+			"subscribe",
+			"fetchMenu",
+			"menuChanged",
+			"store",
+			"isMobile",
+			"modal",
+			"menuChanged",
+			"menushanged",
+			"menuChanged",
+			"fetch",
+			"foodItems",
+			"food-item",
+			"button",
+			"16px",
+			"subject",
+			"routerlink",
+			"order",
+			"orderHi",
+			"order",
+			"store",
+			"http",
+			"post",
+			"http",
+			"userToken",
+			"user.subscribe",
+			"counstructor",
+			"constructor",
+			"interface"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -733,6 +999,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Суп",
+			"dish",
+			"dish-list",
+			"dish-list.service",
+			"dish",
+			"dish.model",
+			"menu",
+			"cart",
+			"cart.service"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -743,82 +1018,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/order/order.component.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								558,
-								558
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": true,
-								"indentSize": 2,
-								"tabSize": 2
-							},
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1026,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								226
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 4,
-								"tabSize": 4
-							},
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -860,6 +1061,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 120.0
 	},
 	"pinned_build_system": "",
 	"project": "food.sublime-project",

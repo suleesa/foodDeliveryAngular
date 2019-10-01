@@ -1,41 +1,59 @@
 <div *ngIf="isLoading">
   <app-spinner></app-spinner>
 </div>
-<div class='search'>
-  <label for='search'> Введите название блюда </label>
-  <input type='text' id='search' name='search' [formControl]='se'>
+<a
+  class="arrow btn btn-warning glyphicon glyphicon-arrow-up"
+  routerLink="./"
+  fragment="start"
+></a>
+<div class="col-md-4 col-md-offset-1">
+  <input
+    type="text"
+    class="form-control "
+    type="text"
+    placeholder="Поиск"
+    aria-label="Search"
+    id="search"
+    name="search"
+    [formControl]="se"
+  />
 </div>
-  <div class='container'>
-<div class="menu-section" *ngIf="!isLoading">
-    <h3>Супы</h3>
+<div class="col-md-4 col-md-offset-1" *ngIf="isAdmin">
+  <button class="btn btn-warning" [routerLink]="['/dishCreate']">
+    Создать новое блюдо
+  </button>
 </div>
-<ul class="menu" *ngIf="!isLoading">
-  <app-dish *ngFor="let dish of getSoups()" [dish]="dish"> </app-dish>
-</ul>
-<div class="menu-section" *ngIf="!isLoading">
-    <h3>Пицца</h3>
-</div>
-<ul class="menu" *ngIf="!isLoading">
-  <app-dish *ngFor="let dish of getPizzas()" [dish]="dish"> </app-dish>
-</ul>
-<div class="menu-section" *ngIf="!isLoading">
-    <h3>Паста</h3>
-</div>
-<ul class="menu" *ngIf="!isLoading">
-  <app-dish *ngFor="let dish of getPastas()" [dish]="dish"> </app-dish>
-</ul>
-<div class="menu-section" *ngIf="!isLoading">
-    <h3>Горячие блюда</h3>
-</div>
-<ul class="menu" *ngIf="!isLoading">
-  <app-dish *ngFor="let dish of getMains()" [dish]="dish"> </app-dish>
-</ul>
-<div class="menu-section" *ngIf="!isLoading">
-    <h3>Дессерты</h3>
-</div>
-<ul class="menu" *ngIf="!isLoading">
-  <app-dish *ngFor="let dish of getDesserts()" [dish]="dish"> </app-dish>
-</ul>
-<div id="modal-container" class="hidden"></div>
-<div id="overlay" (click)="removeModal()" class="hidden"></div>
+<div class="col-md-10 .d-block col-md-offset-1">
+  <div *ngIf="!isLoading">
+    <h3 id="soups" *ngIf="getSoups().length > 0">Супы</h3>
+  </div>
+  <ul class="menu" *ngIf="!isLoading">
+    <app-dish *ngFor="let dish of getSoups()" [dish]="dish"> </app-dish>
+  </ul>
+  <div *ngIf="!isLoading">
+    <h3 id="pizza" *ngIf="getPizzas().length > 0">Пицца</h3>
+  </div>
+  <ul class="menu" *ngIf="!isLoading">
+    <app-dish *ngFor="let dish of getPizzas()" [dish]="dish"> </app-dish>
+  </ul>
+  <div *ngIf="!isLoading">
+    <h3 id="pasta" *ngIf="getPastas().length > 0">Паста</h3>
+  </div>
+  <ul class="menu" *ngIf="!isLoading">
+    <app-dish *ngFor="let dish of getPastas()" [dish]="dish"> </app-dish>
+  </ul>
+  <div *ngIf="!isLoading">
+    <h3 id="main" *ngIf="getMains().length > 0">Горячие блюда</h3>
+  </div>
+  <ul class="menu" *ngIf="!isLoading">
+    <app-dish *ngFor="let dish of getMains()" [dish]="dish"> </app-dish>
+  </ul>
+  <div *ngIf="!isLoading">
+    <h3 id="dessert" *ngIf="getDesserts().length > 0">Дессерты</h3>
+  </div>
+  <ul class="menu" *ngIf="!isLoading">
+    <app-dish *ngFor="let dish of getDesserts()" [dish]="dish"> </app-dish>
+  </ul>
+  <div id="modal-container" class="hidden overflow-auto"></div>
+  <div id="overlay" (click)="removeModal()" class="hidden"></div>
 </div>

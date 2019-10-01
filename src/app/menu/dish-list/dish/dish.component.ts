@@ -48,6 +48,9 @@ export class DishComponent implements OnInit {
     );
   }
 
+  removeModal() {
+    this.modalService.destroy();
+  }
   startEdit() {
     console.log('navigation');
     this.router.navigate(['/dishEdit/', this.dish.id]);

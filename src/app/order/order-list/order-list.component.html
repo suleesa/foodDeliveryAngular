@@ -1,2 +1,9 @@
-<app-order *ngFor='let order of orders' [order] = 'order'></app-order>
-<p>{{orders.length}}</p>
+<div class="col-md-10 col-md-offset-1">
+  <div class="list-item-group">
+    <h2 *ngIf='orders.length>0'> История заказов </h2>
+    <app-order
+      *ngFor="let order of orders"
+      [order]="order"
+    ></app-order>
+  </div>
+</div>

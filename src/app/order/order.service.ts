@@ -1,17 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Order } from './order.model';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
+import { NotificationService } from '../shared/notification.service'
 
 @Injectable({ providedIn: 'root' })
 export class OrderService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,
+              private notificationService:NotificationService) {}
 
   newOrder(order: Order) {
     return this.http.post(
       'https://my-first-project-ea1d8.firebaseio.com/orders.json',
       order
-    );
+    ).pipe(tap(r => this.notificationService.setMessage('Ваш заказ успешно оформлен')))
   }
 
   updateOrder(order: Order) {
@@ -53,5 +55,6 @@ export class OrderService {
         })
       );
   }
-  // ?orderBy="price"&equalTo=300
+
+
 }

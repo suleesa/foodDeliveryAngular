@@ -1,83 +1,122 @@
 <app-header></app-header>
+<div class="container-fluid" *ngIf="!isLoading">
+  <div class="col-md-8 col-md-offset-1 ">
+    <form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)" class="border">
+      <h2>Оформление заказа</h2>
+      <div class="form-group">
+        <label for="userName">Имя </label>
 
-<div class="order">
-  <h1>Оформление заказа</h1>
-  <img src="assets/img/picnic-basket.svg" class="picnic" />
-  <form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)">
-    <label
-      >Имя
-      <input type="text" name="name" id="userName" [ngModel]='profile.userName' required />
-    </label>
-    <label
-      >Телефон
-      <input type="text" name="telephone" id="telephone"  [ngModel]='profile.userTelephone' required />
-    </label>
-    <label
-      >Адрес
-      <textarea
-        type="text"
-        name="address"
-        id="address"
-        required
-        minlength="6"
-        [ngModel]='profile.userAddress'
-      ></textarea>
-    </label>
-    <p>Количество персон</p>
-    <button
-      type="button"
-      class="changeAmountGuest"
-      (click)="decreaseAmountGuest()"
-      [disabled]="guestAmount < 2"
-    >
-      -
-    </button>
-    {{ guestAmount }} шт
-    <button
-      type="button"
-      class="changeAmountGuest"
-      (click)="increaseAmountGuest()"
-    >
-      +
-    </button>
-    <h3>Ваш заказ</h3>
-    <ol *ngFor="let dish of countedDishes">
-      <li>{{ dish.dish.name }}</li>
-      <span>{{ dish.dish.price }} руб.</span>
-      <button (click)="deleteDish(dish.dish)" type="button">Х</button>
-      <div class="changeAmount">
-        <button (click)="dish.decreaseAmount(); refreshPrice()" type="button">
-          -
-        </button>
-        {{ dish.quantity }} шт.
-        <button (click)="dish.increaseAmount(); refreshPrice()" type="button">
-          +
+        <input
+          class="form-control"
+          type="text"
+          name="name"
+          id="userName"
+          [ngModel]="profile.userName"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="telephone">Телефон</label>
+        <input
+          type="text"
+          name="telephone"
+          id="telephone"
+          [ngModel]="profile.userTelephone"
+          required
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="address">Адрес</label>
+        <textarea
+          type="text"
+          name="address"
+          id="address"
+          class="form-control"
+          required
+          minlength="6"
+          [ngModel]="profile.userAddress"
+        ></textarea>
+      </div>
+      <p>Количество персон</p>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button
+            type="button"
+            (click)="decreaseAmountGuest()"
+            [disabled]="guestAmount < 2"
+            class="glyphicon glyphicon-minus btn btn-warning btn-xs"
+          ></button>
+          <span> {{ guestAmount }} шт </span>
+        </div>
+        <div class="btn-group">
+          <button
+            class="glyphicon glyphicon-plus btn btn-warning  btn-xs"
+            type="button"
+            (click)="increaseAmountGuest()"
+          ></button>
+        </div>
+      </div>
+      <h3>Ваш заказ</h3>
+      <ol *ngFor="let dish of countedDishes" class="list-group">
+        <li class="list-group-item ">
+          <div class="flex-row">
+            <h4 class="dishName">{{ dish.dish.name }}</h4>
+            <h5 class="dishPrice">{{ dish.dish.price }} руб.</h5>
+          </div>
+          <div class="btn-toolbar dishAmount">
+            <div class="btn-group">
+              <button
+                (click)="dish.decreaseAmount(); refreshPrice()"
+                type="button"
+                class="glyphicon glyphicon-minus btn btn-warning btn-xs"
+              ></button>
+              {{ dish.quantity }} шт.
+            </div>
+            <div class="btn-group">
+              <button
+                (click)="dish.increaseAmount(); refreshPrice()"
+                class="glyphicon glyphicon-plus btn btn-warning  btn-xs"
+                type="button"
+              ></button>
+            </div>
+          </div>
+          <div *ngFor="let topping of dish.toppings" class="tt">
+            <div
+              class="list-style t-list flex-row"
+              ngFor="let topping of dish.toppings"
+            >
+              <span class="t-name t">{{ topping.name }}</span>
+              <span class="t-price t">{{ topping.price }} руб.</span>
+              <button
+                type="button"
+                (click)="dish.removeTopping(topping); refreshPrice()"
+                class="btn btn-danger glyphicon glyphicon-remove btn-xs t"
+              ></button>
+            </div>
+          </div>
+          <button
+            (click)="deleteDish(dish.dish)"
+            type="button"
+            class="btn btn-danger"
+          >
+            Удалить
+          </button>
+        </li>
+      </ol>
+      <h3>Итого {{ totalPrice }} руб.</h3>
+      <div>
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg"
+          [disabled]="!orderForm.valid || totalPrice === 0"
+        >
+          Заказать
         </button>
       </div>
-      <h5 *ngIf="dish.toppings.length > 0">Топпинги</h5>
-      <ul *ngFor="let topping of dish.toppings">
-        <li>{{ topping.name }}</li>
-        <span>{{ topping.price }} руб.</span>
-        <button
-          type="button"
-          (click)="dish.removeTopping(topping); refreshPrice()"
-        >
-          Х
-        </button>
-      </ul>
-    </ol>
-    <h3>
-      Итого<span> {{ totalPrice }} руб.</span>
-    </h3>
-    <button
-      type="submit"
-      class="orderButton"
-      [disabled]="!orderForm.valid || totalPrice === 0"
-    >
-      Заказать
-    </button>
-  </form>
-</div>
+    </form>
+  </div>
 
-<div id="modal-container" class="hidden"></div>
-<div id="overlay" (click)="removeModal()" class="hidden"></div>
+  <div id="modal-container" class="hidden"></div>
+  <div id="overlay" (click)="removeModal()" class="hidden"></div>
+</div>

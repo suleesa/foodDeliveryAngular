@@ -1,13 +1,9 @@
-<div class="menu-item_change">
-  <div class="icons">
-    <img src="assets/img/edit.svg" class="item-edit" />
-    <img src="assets/img/cancel.svg" class="item-delete" />
-  </div>
+<div class="menu-item_change overflow-auto">
   <div class="menu-item__imgDesc_change">
     <img
       src="{{ dish.imgPath }}"
       alt="barcelona"
-      class="menu-item__img_change"
+      class="menu-item__img_change img-fluid"
     />
     <div class="menu-item__description_change">
       <div class="menu-item__name">{{ countedDish.dish.name }}</div>
@@ -18,33 +14,43 @@
       <div class="menu-item__price">
         {{ countedDish.calculatePrice() }} руб.
       </div>
-      <div class="menu-item__amount">
-        <button
-          (click)="countedDish.decreaseAmount()"
-          [disabled]="quantity < 2"
-        >
-          -
-        </button>
-        {{ countedDish.quantity }} шт
-        <button (click)="countedDish.increaseAmount()">+</button>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button
+            (click)="countedDish.decreaseAmount()"
+            [disabled]="countedDish.quantity < 2"
+            class="glyphicon glyphicon-minus btn btn-warning btn-xs"
+          ></button>
+          <span>{{ countedDish.quantity }} шт</span>
+        </div>
+        <div class="btn-group">
+          <button
+            (click)="countedDish.increaseAmount()"
+            class="glyphicon glyphicon-plus btn btn-warning  btn-xs"
+          ></button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="toppings">
-    <p *ngIf='toppings'>Топинги на ваш выбор</p>
-    <form>
-      <label *ngFor="let topping of countedDish.toppings" class="topping">
-        <input
-          type="checkbox"
-          [checked]="topping.selected"
-          (input)="topping.selected = $event.target.checked"
-        />
-        {{ topping.name }}
-        <span class="addPrice">{{ topping.price }} руб.</span></label
+  <div class="toppings" *ngIf="countedDish.toppings">
+    <p>Топинги на ваш выбор</p>
+    <div class="form-check" *ngFor="let topping of countedDish.toppings">
+      <input
+        class="form-check-input p-2 bd-highlight"
+        type="checkbox"
+        [id]="topping.name"
+        [checked]="topping.selected"
+        (input)="topping.selected = $event.target.checked"
+      />
+      <label [for]="topping.name" class="form-check-label p-2 bd-highlight">
+        {{ topping.name }}</label
       >
-    </form>
+      <span class="addPrice p-2 bd-highlight"
+        >{{ topping.price }} руб.</span
+      >
+    </div>
   </div>
-  <button class="menu-item__order" (click)="toOrder()">
+  <button class="btn btn-primary btn-lg btn-block" (click)="toOrder()">
     Добавить в корзину
   </button>
 </div>

@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
   userSub: Subscription;
   userId: string = null;
   isLoading = false;
-  orders: Order[];
+  orders: Order[] =[];
 
   constructor(
     private authService: AuthService,

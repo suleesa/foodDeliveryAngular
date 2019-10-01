@@ -1,20 +1,39 @@
-<div class="order">
-  <div class="date">{{ order.date | date: 'dd/MM/yyyy' }}</div>
-  <div class="userName">Имя клиента: {{ order.name }}</div>
-  <div class="userTelephone">Телефон: {{ order.telephone }}</div>
-  <div class="userAddress">Адрес: {{ order.address }}</div>
-  <div class="guests">Количество гостей: {{ order.guestAmount }}</div>
-  <div class="price">Общая сумма заказа: {{ order.totalPrice }} рублей</div>
-  <div class="status">
-    <label
-      >Статус заказа:
-      <select #s (change)='changeStatus(s.value)'>
-        <option [value]='"waiting_confirmation"'> Ожидает подтверждения</option>
-        <option [value]='"cooking"'> Готовится</option>
-        <option [value]='"sent"'> Передан на доставку</option>
-        <option [value]='"delivered"'> Доставлен</option>
-      </select>
-    </label>
-    <div></div>
+<div class="list-group-item col-sm-10">
+  <div class="text-muted">
+    Дата заказа {{ order.date | date: 'dd/MM/yyyy HH:mm' }}
   </div>
+  <h5>Имя клиента: {{ order.name }}</h5>
+  <div class="card-text">
+    <p>Телефон: {{ order.telephone }}</p>
+    <p>Адрес: {{ order.address }}</p>
+    <p>Количество гостей: {{ order.guestAmount }}</p>
+    <div *ngIf="isAdmin">
+      <label
+        >Статус заказа:
+        <select #s (change)="changeStatus(s.value)" class="form-control">
+          <option [value]="'waiting_confirmation'">
+            Ожидает подтверждения</option
+          >
+          <option [value]="'cooking'"> Готовится</option>
+          <option [value]="'sent'"> Передан на доставку</option>
+          <option [value]="'delivered'"> Доставлен</option>
+        </select>
+      </label>
+    </div>
+    <div *ngIf="!isAdmin">Статус заказа: {{ checkStatus() }}</div>
+    <div class="card">
+      <h4>Заказ</h4>
+      <ul *ngFor="let countedDish of order.countedDishes">
+        <li>
+          {{ countedDish.dish.name }} x{{countedDish.quantity}}
+          <ul *ngFor="let topping of countedDish.dish.toppings">
+            <li>{{ topping.name }}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <p>Общая сумма заказа: {{ order.totalPrice }} рублей</p>
+  </div>
+  <button class='btn btn-primary' (click)='repeatOrder()'>Повторить заказ</button>
 </div>
+

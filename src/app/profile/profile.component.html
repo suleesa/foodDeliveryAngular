@@ -1,46 +1,56 @@
-
-
 <app-header></app-header>
-<div *ngIf='isLoading'>
+<div *ngIf="isLoading">
 	<app-spinner></app-spinner>
-</div>	
-<div class='personal' *ngIf='!isLoading'>
-	<form #personalForm="ngForm"
-        (ngSubmit)='onSubmit(personalForm)'>
-	    <h2>Личные данные</h2>
-	    <label for="name"> Ваше имя </label>
-	    <input 
-		    type="text" 
-		    name="name" 
-		    id='userName' 
-     		[ngModel] ='profile.userName'
-     		required
-		    placeholder="Иван Иванов">
+</div>
+<div class="container-fluid" *ngIf="!isLoading">
+		<div class="col-md-6 col-md-offset-1">
+				<form #personalForm="ngForm" (ngSubmit)="onSubmit(personalForm)">
 
-	    <label for="address"> Адрес </label>
-	    <textarea 
-		    name="address" 
-		    id='address' 
-     		[ngModel] ='profile.userAddress'
-     		required
-		    placeholder="Санкт-Петербург, Дворцовая площадь д.1"
-		    ></textarea>
-	    <label for="telephone"> Телефон </label>
-	    <input 
-		    type="text" 
-		    id='telephone' 
-		    [ngModel] ='profile.userTelephone'
-     		required
-		    name="telephone" 
-		    placeholder="+0 123 456 78 90 ">
-
-	    <button 
-	        type="submit" 
-			class='save'
-			[disabled]='!personalForm.valid'
-			>Сохранить</button>
+		<h2>Личные данные</h2>
+		<div class="form-group">
+			<label for="name"> Ваше имя </label>
+			<input
+				class="form-control"
+				type="text"
+				name="name"
+				id="userName"
+				[ngModel]="profile.userName"
+				required
+				placeholder="Иван Иванов"
+			/>
+		</div>
+		<div class="form-group">
+			<label for="address"> Адрес </label>
+			<textarea
+				name="address"
+				id="address"
+				class="form-control"
+				[ngModel]="profile.userAddress"
+				required
+				placeholder="Санкт-Петербург, Дворцовая площадь д.1"
+			></textarea>
+		</div>
+		<div class="form-group">
+			<label for="telephone"> Телефон </label>
+			<input
+				type="text"
+				id="telephone"
+				[ngModel]="profile.userTelephone"
+				required
+				class="form-control"
+				name="telephone"
+				placeholder="+0 123 456 78 90 "
+			/>
+		</div>
+		<button
+			type="submit"
+			class="btn btn-primary"
+			[disabled]="!personalForm.valid"
+		>
+			Сохранить
+		</button>
 	</form>
+	</div>
 </div>
 <app-cart></app-cart>
-<app-order-list *ngIf='!isLoading' [orders]='orders'></app-order-list>
- 
+<app-order-list *ngIf="!isLoading" [orders]="orders"></app-order-list>

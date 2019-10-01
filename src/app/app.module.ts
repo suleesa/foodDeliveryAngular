@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DishListComponent } from './menu/dish-list/dish-list.component';
@@ -44,8 +44,13 @@ import { AdminOrdersComponent } from './order/admin-orders/admin-orders.componen
     OrderComponent,
     AdminOrdersComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, ReactiveFormsModule,
-],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ],
   entryComponents: [
     CountedDishEditComponent,
     AuthComponent,

@@ -1,5 +1,13 @@
-<div class='areYou'>
-	<h2> Вы уверены, что хотите удалить это блюдо? </h2>
-	<button (click)='delete(dish)'>Да, удалить это блюдо</button>
-	<button (click)='toMenu()'>Нет, вернуться к меню</button>
+<div class="text-center">
+  <div class="areYou text-center">
+    <h2>Вы уверены, что хотите удалить это блюдо?</h2>
+    <div class="btn-toolbar">
+      <button (click)="delete(dish)" class="btn btn-primary">
+        Да, удалить это блюдо
+      </button>
+      <button (click)="toMenu()" class="btn btn-primary">
+        Нет, вернуться к меню
+      </button>
+    </div>
+  </div>
 </div>
