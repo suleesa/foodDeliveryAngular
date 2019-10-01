@@ -60,6 +60,8 @@ export class DataStorageService {
   deleteDish(id) {
     return this.http.delete(
       'https://my-first-project-ea1d8.firebaseio.com/soups/' + id + '.json'
-    );
+    ).pipe(
+        tap(r => this.notificationService.setMessage('Блюдо удалено'))
+      );
   }
 }

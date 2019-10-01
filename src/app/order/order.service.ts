@@ -23,7 +23,7 @@ export class OrderService {
           order.id +
           '.json',
         order
-      )
+      ).pipe(tap(r => this.notificationService.setMessage('Заказ обновлен')))
       .subscribe(resp => console.log(resp));
   }
 
@@ -37,7 +37,7 @@ export class OrderService {
             ordersMap[key].id = key;
             orders.push(ordersMap[key]);
           }
-          return orders;
+          return orders.sort((a,b) => b.date - a.date).reverse()
         })
       );
   }
@@ -51,7 +51,7 @@ export class OrderService {
             ordersMap[key].id = key;
             orders.push(ordersMap[key]);
           }
-          return orders;
+          return orders.sort((a,b) => b.date - a.date).reverse()
         })
       );
   }
