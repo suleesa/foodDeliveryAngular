@@ -8,17 +8,17 @@
   <div class="col-md-10 .d-block col-md-offset-1">
     <ul id="sections" *ngIf="mainPage" class="nav navbar-nav navbar-left" id='menu' 
       >
-      <li class="nav-item"><a href="#soups" class="nav-link">Супы</a></li>
+      <li class="nav-item"><a href="#soups" class="nav-link" id='start'>Супы</a></li>
       <li class="nav-item"><a href="#pizza" class="nav-link">Пицца</a></li>
       <li class="nav-item"><a href="#pasta" class="nav-link">Паста</a></li>
       <li class="nav-item ">
-        <a href="#main" class="nav-link" id='start'>Горячие блюда</a>
+        <a href="#main" class="nav-link" >Горячие блюда</a>
       </li>
       <li class="nav-item "><a href="#dessert" class="nav-link">Десерты</a></li>
     </ul>
-    <ul id="sections" *ngIf="!mainPage" class="nav navbar-nav navbar-left">
+    <ul id="sections" *ngIf="!mainPage" class="nav navbar-nav navbar-left" id='start'>
       <li>
-        <a [routerLink]="['']" class="nav-link"><h4>Меню</h4></a>
+        <a [routerLink]="['']" class="nav-link" ><h4>Меню</h4></a>
       </li>
     </ul>
     <div class="btn-toolbar navbar-right">

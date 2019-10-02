@@ -10,7 +10,7 @@
     <div *ngIf="isAdmin">
       <label
         >Статус заказа:
-        <select #s (change)="changeStatus(s.value)" class="form-control">
+        <select #s (change)="changeStatus(s.value)" class="form-control" [ngModel]="order.status">
           <option [value]="'waiting_confirmation'">
             Ожидает подтверждения</option
           >
