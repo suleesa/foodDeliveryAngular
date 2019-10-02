@@ -93,5 +93,6 @@ export class OrderCreateComponent implements OnInit {
         error => console.log(error)
       );
     form.reset();
+    this.cartService.resetCart()
   }
 }

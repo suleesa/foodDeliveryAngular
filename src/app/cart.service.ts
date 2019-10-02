@@ -39,4 +39,9 @@ export class CartService {
     );
     return this.totalPrice;
   }
+
+  resetCart(){
+    this.countedDishes=[]
+    this.totalPrice=0;
+  }
 }
