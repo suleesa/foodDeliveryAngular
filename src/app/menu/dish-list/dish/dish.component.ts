@@ -2,7 +2,7 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Dish } from '../dish.model';
 import { DishListService } from '../dish-list.service';
 import { ModalService } from '../../../shared/forModalBox/modal.service';
-import { AreYouSureComponent } from '../../../shared/are-you-sure/are-you-sure.component';
+import { ConfirmComponent } from '../../../shared/confirm/confirm.component';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../../../auth/auth.service';
@@ -39,7 +39,7 @@ export class DishComponent implements OnInit {
 
   confirm() {
     this.modalService.init(
-      AreYouSureComponent,
+      ConfirmComponent,
       {
         isMobile: false,
         dish: this.dish

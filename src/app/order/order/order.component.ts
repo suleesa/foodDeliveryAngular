@@ -4,6 +4,8 @@ import { OrderService } from '../order.service';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../../auth/auth.service'
 
+import { NotificationService } from '../../shared/notification.service'
+
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -16,7 +18,8 @@ export class OrderComponent implements OnInit {
 
   constructor(
     private orderService: OrderService,
-    private authService: AuthService
+    private authService: AuthService,
+    private notificationService:NotificationService
   ) {}
 
   ngOnInit() {
@@ -49,11 +52,16 @@ export class OrderComponent implements OnInit {
   changeStatus(s) {
     this.order.status = s;
     this.orderService.updateOrder(this.order);
+    this.notificationService.setMessage('Заказ обновлен')
   }
 
   repeatOrder(){
     this.order.date = new Date()
+    this.order.status = 'waiting_confirmation'
     this.orderService.newOrder(this.order).subscribe(
-      resp => console.log(resp))
+      resp => {
+        console.log(resp);
+        this.notificationService.setMessage('Ваш заказ успешно оформлен')
+      })
   }
 }

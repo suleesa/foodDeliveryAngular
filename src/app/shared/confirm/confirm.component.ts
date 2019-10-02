@@ -5,11 +5,11 @@ import { ModalService } from '../forModalBox/modal.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-are-you-sure',
-  templateUrl: './are-you-sure.component.html',
-  styleUrls: ['./are-you-sure.component.scss']
+  selector: 'app-confirm',
+  templateUrl: './confirm.component.html',
+  styleUrls: ['./confirm.component.scss']
 })
-export class AreYouSureComponent implements OnInit {
+export class ConfirmComponent implements OnInit {
   @Input() dish: Dish;
   constructor(
     private foodListService: DishListService,

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { OrderService } from '../order.service';
 import { Profile } from '../../profile/profile.model';
 import { ProfileService } from '../../profile/profile.service';
+import { NotificationService } from '../../shared/notification.service'
 
 @Component({
   selector: 'app-order-create',
@@ -28,7 +29,8 @@ export class OrderCreateComponent implements OnInit {
     private orderService: OrderService,
     private authService: AuthService,
     private router: Router,
-    private profileService: ProfileService
+    private profileService: ProfileService,
+    private notificationService:NotificationService
   ) {}
 
   ngOnInit() {
@@ -89,8 +91,14 @@ export class OrderCreateComponent implements OnInit {
     this.orderService
       .newOrder(order)
       .subscribe(
-        resp => this.router.navigate(['']),
-        error => console.log(error)
+        resp => {
+          this.router.navigate([''])
+          this.notificationService.setMessage("Ваш заказ успешно оформлен")},
+
+        error => {
+          console.log(error)
+          this.notificationService.setMessage("К сожалению произошла ошибка, попробуйте еще раз")}
+        
       );
     form.reset();
     this.cartService.resetCart()

@@ -18,9 +18,9 @@
         />
       </div>
       <div class="form-group">
-      <label for='section'>Категория блюда</label>
+        <label for="section">Категория блюда</label>
         <select
-          id='section'
+          id="section"
           class="select-section"
           [ngModel]="dish.category"
           name="category"
@@ -66,7 +66,7 @@
           placeholder="350 г."
           [ngModel]="dish.weight"
           required
-          min=1
+          min="1"
         />
       </div>
       <div class="form-group">
@@ -79,14 +79,16 @@
           placeholder="300 руб."
           [ngModel]="dish.price"
           required
-          min=1
+          min="1"
         />
       </div>
-      <form class="form-inline t-form" *ngFor="let topping of toppings.controls; let i = index" >
-              <h4>Топпинги</h4>
-
+      <h4 *ngIf='toppings.controls.length>0'>Топпинги</h4>
+      <form
+        class="form-inline t-form"
+        *ngFor="let topping of toppings.controls; let i = index"
+      >
         <div class="form-group">
-          <label class='t'
+          <label class="t"
             >Название
             <input
               class="t form-control"
@@ -96,13 +98,13 @@
           </label>
         </div>
         <div class="form-group">
-          <label class='t'
+          <label class="t"
             >Стоимость
             <input
               class="t form-control"
               type="number"
               [formControl]="topping.controls['price']"
-              min=1
+              min="1"
             />
           </label>
         </div>
@@ -114,17 +116,13 @@
           удалить
         </button>
       </form>
-        <button
-          type="button"
-          (click)="addTopping()"
-          class="btn btn-warning t-b"
-        >
-          Добавить топпинг
-        </button>
+      <button type="button" (click)="addTopping()" class="btn btn-warning t-b">
+        Добавить топпинг
+      </button>
 
-        <button class="btn btn-primary btn-lg" [disabled]="!dishEdit.valid">
-          Сохранить
-        </button>
+      <button class="btn btn-primary btn-lg" [disabled]="!dishEdit.valid">
+        Сохранить
+      </button>
     </form>
   </div>
 </div>

@@ -20,7 +20,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { ProfileComponent } from './profile/profile.component';
 import { DishEditComponent } from './dish-edit/dish-edit.component';
-import { AreYouSureComponent } from './shared/are-you-sure/are-you-sure.component';
+import { ConfirmComponent } from './shared/confirm/confirm.component';
 import { OrderListComponent } from './order/order-list/order-list.component';
 import { OrderComponent } from './order/order/order.component';
 import { AdminOrdersComponent } from './order/admin-orders/admin-orders.component';
@@ -39,7 +39,7 @@ import { AdminOrdersComponent } from './order/admin-orders/admin-orders.componen
     SpinnerComponent,
     ProfileComponent,
     DishEditComponent,
-    AreYouSureComponent,
+    ConfirmComponent,
     OrderListComponent,
     OrderComponent,
     AdminOrdersComponent
@@ -55,7 +55,7 @@ import { AdminOrdersComponent } from './order/admin-orders/admin-orders.componen
     CountedDishEditComponent,
     AuthComponent,
     OrderCreateComponent,
-    AreYouSureComponent
+    ConfirmComponent
   ],
   providers: [
     CartService,

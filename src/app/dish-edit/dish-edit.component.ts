@@ -78,14 +78,19 @@ export class DishEditComponent implements OnInit {
       this.dataStorageService.updateDish(this.dish).subscribe(resp => {
         console.log(resp);
         this.router.navigate(['/']);
+        this.notificationService.setMessage('Блюдо успешно обновлено')
       });
     } else {
       this.dataStorageService.newDish(this.dish).subscribe(resp => {
         console.log(resp);
         this.router.navigate(['/']);
+        this.notificationService.setMessage('Блюдо успешно добавлено')
+
       });
     }
   }
+
+  
 
   
 }

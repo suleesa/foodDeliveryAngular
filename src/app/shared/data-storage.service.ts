@@ -52,16 +52,12 @@ export class DataStorageService {
           '.json',
         dish
       )
-      .pipe(
-        tap(r => this.notificationService.setMessage('Изменения успешно сохранены'))
-      );
   }
 
   deleteDish(id) {
     return this.http.delete(
       'https://my-first-project-ea1d8.firebaseio.com/soups/' + id + '.json'
-    ).pipe(
-        tap(r => this.notificationService.setMessage('Блюдо удалено'))
-      );
+    )
   }
 }
+

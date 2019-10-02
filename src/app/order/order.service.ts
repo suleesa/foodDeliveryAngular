@@ -2,18 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Order } from './order.model';
 import { Injectable } from '@angular/core';
 import { map, tap } from 'rxjs/operators';
-import { NotificationService } from '../shared/notification.service'
 
 @Injectable({ providedIn: 'root' })
 export class OrderService {
-  constructor(private http: HttpClient,
-              private notificationService:NotificationService) {}
+  constructor(private http: HttpClient) {}
 
   newOrder(order: Order) {
     return this.http.post(
       'https://my-first-project-ea1d8.firebaseio.com/orders.json',
       order
-    ).pipe(tap(r => this.notificationService.setMessage('Ваш заказ успешно оформлен')))
+    );
   }
 
   updateOrder(order: Order) {
@@ -23,7 +21,7 @@ export class OrderService {
           order.id +
           '.json',
         order
-      ).pipe(tap(r => this.notificationService.setMessage('Заказ обновлен')))
+      )
       .subscribe(resp => console.log(resp));
   }
 
@@ -37,13 +35,17 @@ export class OrderService {
             ordersMap[key].id = key;
             orders.push(ordersMap[key]);
           }
-          return orders.sort((a,b) => b.date - a.date).reverse()
+          return orders.sort((a, b) => b.date - a.date).reverse();
         })
       );
   }
- getUserOrders(id) {
+  getUserOrders(id) {
     return this.http
-      .get('https://my-first-project-ea1d8.firebaseio.com/orders.json?orderBy="userId"&equalTo="' + id + '"')
+      .get(
+        'https://my-first-project-ea1d8.firebaseio.com/orders.json?orderBy="userId"&equalTo="' +
+          id +
+          '"'
+      )
       .pipe(
         map(ordersMap => {
           let orders = [];
@@ -51,10 +53,8 @@ export class OrderService {
             ordersMap[key].id = key;
             orders.push(ordersMap[key]);
           }
-          return orders.sort((a,b) => b.date - a.date).reverse()
+          return orders.sort((a, b) => b.date - a.date).reverse();
         })
       );
   }
-
-
 }
