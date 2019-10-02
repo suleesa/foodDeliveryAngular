@@ -31,7 +31,6 @@ export class OrderComponent implements OnInit {
         this.isAdmin = false;
       }
     });
-    console.log(this.order)
   }
   checkStatus() {
     if (this.order.status === 'waiting_confirmation') {

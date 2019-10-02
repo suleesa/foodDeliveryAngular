@@ -21,7 +21,7 @@ export class ProfileComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private profileService: ProfileService,
-    private orderService: OrderService
+    private orderService: OrderService,
   ) {}
 
   ngOnInit() {
@@ -62,10 +62,8 @@ export class ProfileComponent implements OnInit {
       form.value.address,
       this.userId
     );
-
-    if (!this.profile) {
       this.profileService.saveProfile(this.userId, newProfile);
-    }
-    this.profileService.updateProfile(this.userId, newProfile);
+  
   }
+
 }

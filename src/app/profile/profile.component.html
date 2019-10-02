@@ -2,60 +2,60 @@
 <div *ngIf="isLoading">
 	<app-spinner></app-spinner>
 </div>
-<a
-  class="arrow btn btn-warning glyphicon glyphicon-arrow-up"
-  routerLink="./"
-  fragment="start"
-></a>
-<div class="container-fluid" *ngIf="!isLoading">
-		<div class="col-md-6 col-md-offset-1">
-				<form #personalForm="ngForm" (ngSubmit)="onSubmit(personalForm)">
 
-		<h2>Личные данные</h2>
-		<div class="form-group">
-			<label for="name"> Ваше имя </label>
-			<input
-				class="form-control"
-				type="text"
-				name="name"
-				id="userName"
-				[ngModel]="profile.userName"
-				required
-				placeholder="Иван Иванов"
-			/>
-		</div>
-		<div class="form-group">
-			<label for="address"> Адрес </label>
-			<textarea
-				name="address"
-				id="address"
-				class="form-control"
-				[ngModel]="profile.userAddress"
-				required
-				min-length='6'
-				placeholder="Санкт-Петербург, Дворцовая площадь д.1"
-			></textarea>
-		</div>
-		<div class="form-group">
-			<label for="telephone"> Телефон </label>
-			<input
-				type="text"
-				id="telephone"
-				[ngModel]="profile.userTelephone"
-				required
-				class="form-control"
-				name="telephone"
-				placeholder="+0 123 456 78 90 "
-			/>
-		</div>
-		<button
-			type="submit"
-			class="btn btn-primary"
-			[disabled]="!personalForm.valid"
-		>
-			Сохранить
-		</button>
-	</form>
+<div class="container-fluid" *ngIf="!isLoading">
+	<a
+		class="arrow btn btn-warning glyphicon glyphicon-arrow-up"
+		routerLink="./"
+		fragment="start"
+	></a>
+	<div class="col-md-6 col-md-offset-1">
+		<form #personalForm="ngForm" (ngSubmit)="onSubmit(personalForm)">
+			<h2>Личные данные</h2>
+			<div class="form-group">
+				<label for="name"> Ваше имя </label>
+				<input
+					class="form-control"
+					type="text"
+					name="name"
+					id="userName"
+					[ngModel]="profile.userName"
+					required
+					placeholder="Иван Иванов"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="address"> Адрес </label>
+				<textarea
+					name="address"
+					id="address"
+					class="form-control"
+					[ngModel]="profile.userAddress"
+					required
+					minlength="6"
+					placeholder="Санкт-Петербург, Дворцовая площадь д.1"
+				></textarea>
+			</div>
+			<div class="form-group">
+				<label for="telephone"> Телефон </label>
+				<input
+					type="text"
+					id="telephone"
+					[ngModel]="profile.userTelephone"
+					required
+					class="form-control"
+					name="telephone"
+					placeholder="+0 123 456 78 90 "
+				/>
+			</div>
+			<button
+				type="submit"
+				class="btn btn-primary"
+				[disabled]="!personalForm.valid"
+			>
+				Сохранить
+			</button>
+		</form>
 	</div>
 </div>
 <app-cart></app-cart>
