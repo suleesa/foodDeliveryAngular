@@ -1,3 +1,9 @@
+
+<div *ngIf='notificationService.message' class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeNotification()">
+    <span aria-hidden="true">&times;</span></button>
+   {{notificationService.message}}
+</div>
 <nav class="navbar navbar-default">
   <div class="col-md-10 .d-block col-md-offset-1">
     <ul id="sections" *ngIf="mainPage" class="nav navbar-nav navbar-left" id='menu' 
@@ -39,8 +45,3 @@
   </div>
 </nav>
 
-<div *ngIf='notificationService.message' class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeNotification()">
-    <span aria-hidden="true">&times;</span></button>
-   {{notificationService.message}}
-</div>

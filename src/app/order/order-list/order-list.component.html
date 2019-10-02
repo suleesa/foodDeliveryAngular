@@ -1,5 +1,5 @@
 <div class="col-md-10 col-md-offset-1">
-  <div class="list-item-group"  *ngIf='orders.length>0'>
+  <div class="list-item-group"  *ngIf='orders'>
     <h2> История заказов </h2>
     <app-order
       *ngFor="let order of orders"
