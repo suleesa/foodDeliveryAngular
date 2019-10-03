@@ -12,7 +12,7 @@ import { NotificationService } from '../shared/notification.service'
 })
 export class DishEditComponent implements OnInit {
   isEditingMode: boolean = false;
-  dish: Dish = new Dish('', '', '', '', '', 0, 0, []);
+  dish: Dish = new Dish(null, null, null, null, null, 0, 0, [], null);
   isLoading: boolean = false;
   id: string;
   toppings = new FormArray([]);
@@ -72,7 +72,8 @@ export class DishEditComponent implements OnInit {
       form.value.description,
       form.value.weight,
       form.value.price,
-      this.toppings.value
+      this.toppings.value,
+      true
     );
     if (this.isEditingMode) {
       this.dataStorageService.updateDish(this.dish).subscribe(resp => {

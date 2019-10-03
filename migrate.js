@@ -8,7 +8,8 @@ function foodItem(
   description,
   weight,
   price,
-  toppings
+  toppings,
+  available
 ) {
   return {
     id: id,
@@ -18,7 +19,8 @@ function foodItem(
     description: description,
     weight: weight,
     price: price,
-    toppings: toppings
+    toppings: toppings,
+    available: available
   };
 }
 
@@ -52,7 +54,8 @@ dishes = [
         name: 'сухарики из белого хлеба',
         price: 50
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -68,7 +71,8 @@ dishes = [
       { name: 'сметана', price: 50 },
       { name: 'сухарики из ржаного хлеба', price: 30 },
       { name: 'сухарики из белого хлеба', price: 50 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -84,7 +88,8 @@ dishes = [
       { name: 'сметана', price: 50 },
       { name: 'сухарики из ржаного хлеба', price: 30 },
       { name: 'сухарики из белого хлеба', price: 50 }
-    ]
+    ],
+    true
   ),
   foodItem(
     4,
@@ -100,7 +105,8 @@ dishes = [
       { name: 'сметана', price: 50 },
       { name: 'сухарики из ржаного хлеба', price: 30 },
       { name: 'сухарики из белого хлеба', price: 50 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -116,7 +122,8 @@ dishes = [
       { name: 'сметана', price: 50 },
       { name: 'сухарики из ржаного хлеба', price: 30 },
       { name: 'сухарики из белого хлеба', price: 50 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -135,7 +142,8 @@ dishes = [
       { name: 'шампиньоны', price: 40 },
       { name: 'кабачок', price: 30 },
       { name: 'халапеньо', price: 40 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -154,7 +162,8 @@ dishes = [
       { name: 'шампиньоны', price: 40 },
       { name: 'кабачок', price: 30 },
       { name: 'халапеньо', price: 40 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -173,7 +182,8 @@ dishes = [
       { name: 'шампиньоны', price: 40 },
       { name: 'кабачок', price: 30 },
       { name: 'халапеньо', price: 40 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -192,7 +202,8 @@ dishes = [
       { name: 'шампиньоны', price: 40 },
       { name: 'кабачок', price: 30 },
       { name: 'халапеньо', price: 40 }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -218,7 +229,8 @@ dishes = [
         name: 'пармезан',
         price: 70
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -244,7 +256,8 @@ dishes = [
         name: 'пармезан',
         price: 70
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -270,7 +283,8 @@ dishes = [
         name: 'пармезан',
         price: 70
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -296,7 +310,8 @@ dishes = [
         name: 'пармезан',
         price: 70
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -322,7 +337,8 @@ dishes = [
         name: 'пармезан',
         price: 70
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -355,7 +371,8 @@ dishes = [
         name: 'соус Рэнч',
         price: 30
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -388,7 +405,8 @@ dishes = [
         name: 'соус Рэнч',
         price: 30
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -421,7 +439,8 @@ dishes = [
         name: 'соус Рэнч',
         price: 30
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -454,7 +473,8 @@ dishes = [
         name: 'соус Рэнч',
         price: 30
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -487,7 +507,8 @@ dishes = [
         name: 'соус Рэнч',
         price: 30
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -516,7 +537,8 @@ dishes = [
         name: 'мармелад',
         price: 50
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -545,7 +567,8 @@ dishes = [
         name: 'мармелад',
         price: 50
       }
-    ]
+    ],
+    true
   ),
 
   foodItem(
@@ -575,7 +598,8 @@ dishes = [
         name: 'мармелад',
         price: 50
       }
-    ]
+    ],
+    true
   ),
   foodItem(
     '',
@@ -604,7 +628,8 @@ dishes = [
         name: 'мармелад',
         price: 50
       }
-    ]
+    ],
+    true
   )
 ];
 

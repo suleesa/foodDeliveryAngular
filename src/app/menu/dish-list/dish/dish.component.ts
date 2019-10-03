@@ -6,6 +6,7 @@ import { ConfirmComponent } from '../../../shared/confirm/confirm.component';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../../../auth/auth.service';
+import { DataStorageService } from '../../../shared/data-storage.service';
 
 @Component({
   selector: 'app-dish',
@@ -21,7 +22,8 @@ export class DishComponent implements OnInit {
     private dishListService: DishListService,
     private modalService: ModalService,
     private router: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private dataStorageService: DataStorageService
   ) {}
 
   ngOnInit() {
@@ -58,5 +60,13 @@ export class DishComponent implements OnInit {
 
   ngOnDestroy() {
     this.userSub.unsubscribe();
+  }
+
+  switchIsOn() {
+    this.dish.available = !this.dish.available;
+    console.log(this.dish.available);
+    this.dataStorageService
+      .updateDish(this.dish)
+      .subscribe(resp => console.log(resp));
   }
 }

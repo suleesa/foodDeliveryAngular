@@ -15,7 +15,7 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class DishListComponent implements OnInit {
   dishes: Dish[];
-  filtered_dishes: Dish[];
+  filtered_dishes: Dish[] =[];
   selectedDish: Dish;
   menuChangedSub: Subscription;
   dishSelectedSub: Subscription;
@@ -33,13 +33,13 @@ export class DishListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.filtered_dishes = this.dishes;
 
     this.se.valueChanges.subscribe(q => {
-      if (q) {
+      if (q.length>0) {
         this.filtered_dishes = this.filterDishes(q);
+        console.log(this.filtered_dishes)
       } else {
-        this.filtered_dishes = this.dishes;
+        this.filtered_dishes = [];
       }
     });
     this.userSub = this.authService.user.subscribe(user => {
@@ -55,7 +55,7 @@ export class DishListComponent implements OnInit {
     this.menuChangedSub = this.dishListService.menuChanged.subscribe(
       (dishes: Dish[]) => {
         this.dishes = dishes;
-        this.filtered_dishes = dishes;
+        //this.filtered_dishes = [];
         this.isLoading = false;
       }
     );
@@ -76,26 +76,35 @@ export class DishListComponent implements OnInit {
   }
 
   filterDishes(query) {
-    return this.dishes.filter(dish => {
+
+    return this.availableDishes().filter(dish => {
       let regexp = RegExp(query, 'i');
       return dish.name.match(regexp) || dish.description.match(regexp);
     });
   }
 
+  availableDishes(){
+    if (this.isAdmin){
+      return this.dishes
+    } else {
+      return this.dishes.filter(dish => dish.available)
+    }
+  }
+
   getSoups() {
-    return this.filtered_dishes.filter(dish => dish.category === 'Суп');
+    return this.availableDishes().filter(dish => dish.category === 'Суп');
   }
   getPastas() {
-    return this.filtered_dishes.filter(dish => dish.category === 'Паста');
+    return this.availableDishes().filter(dish => dish.category === 'Паста');
   }
   getPizzas() {
-    return this.filtered_dishes.filter(dish => dish.category === 'Пицца');
+    return this.availableDishes().filter(dish => dish.category === 'Пицца');
   }
   getMains() {
-    return this.filtered_dishes.filter(dish => dish.category === 'Горячее');
+    return this.availableDishes().filter(dish => dish.category === 'Горячее');
   }
   getDesserts() {
-    return this.filtered_dishes.filter(dish => dish.category === 'Десерт');
+    return this.availableDishes().filter(dish => dish.category === 'Десерт');
   }
 
   removeModal() {

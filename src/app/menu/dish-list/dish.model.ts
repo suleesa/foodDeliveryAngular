@@ -9,6 +9,7 @@ export class Dish {
   public toppings: Toppings[];
   public category:string;
   public description?: string;
+  public available:boolean;
 
   constructor(
     id: string,
@@ -18,7 +19,8 @@ export class Dish {
     description: string,
     weight: number,
     price: number,
-    toppings: Toppings[]
+    toppings: Toppings[],
+    available:boolean
   ) {
     this.id = id;
     this.category = category;
@@ -28,5 +30,6 @@ export class Dish {
     this.weight = weight;
     this.price = price;
     this.toppings = toppings;
+    this.available = this.available;
   }
 }
