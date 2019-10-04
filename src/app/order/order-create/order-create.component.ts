@@ -76,6 +76,8 @@ export class OrderCreateComponent implements OnInit {
     if (!form.valid) {
       return;
     }
+
+    console.log(form.value.comments)
     let order = new Order(
       null,
       this.userId,
@@ -86,7 +88,8 @@ export class OrderCreateComponent implements OnInit {
       this.guestAmount,
       this.cartService.calculateTotalPrice(),
       'waiting_confirmation',
-      new Date()
+      new Date(),
+      form.value.comments
     );
     this.orderService
       .newOrder(order)

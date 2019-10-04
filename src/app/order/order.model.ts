@@ -10,7 +10,8 @@ export class Order {
   public guestAmount: number;
   public totalPrice: number;
   public status: string;
-  public date: Date
+  public date: Date;
+  public comments:string
 
   constructor(
     id: string,
@@ -23,6 +24,7 @@ export class Order {
     totalPrice: number,
     status: string,
     date: Date,
+    comments:string
   ) {
     this.id = id;
     this.userId = userId;
@@ -32,7 +34,8 @@ export class Order {
     this.countedDishes = countedDishes;
     this.guestAmount = guestAmount;
     this.totalPrice = totalPrice;
-    this.status = status
-    this.date = date
+    this.status = status;
+    this.date = date;
+    this.comments = comments
   }
 }

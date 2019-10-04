@@ -15,7 +15,6 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class DishListComponent implements OnInit {
   dishes: Dish[];
-  filtered_dishes: Dish[] =[];
   selectedDish: Dish;
   menuChangedSub: Subscription;
   dishSelectedSub: Subscription;
@@ -24,6 +23,7 @@ export class DishListComponent implements OnInit {
   se = new FormControl(null);
   isAdmin: boolean = false;
   userSub: Subscription;
+  q: string = '';
 
   constructor(
     private dishListService: DishListService,
@@ -33,14 +33,8 @@ export class DishListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-
     this.se.valueChanges.subscribe(q => {
-      if (q.length>0) {
-        this.filtered_dishes = this.filterDishes(q);
-        console.log(this.filtered_dishes)
-      } else {
-        this.filtered_dishes = [];
-      }
+      this.q = q;
     });
     this.userSub = this.authService.user.subscribe(user => {
       if (user) {
@@ -55,7 +49,6 @@ export class DishListComponent implements OnInit {
     this.menuChangedSub = this.dishListService.menuChanged.subscribe(
       (dishes: Dish[]) => {
         this.dishes = dishes;
-        //this.filtered_dishes = [];
         this.isLoading = false;
       }
     );
@@ -75,19 +68,22 @@ export class DishListComponent implements OnInit {
     );
   }
 
-  filterDishes(query) {
-
-    return this.availableDishes().filter(dish => {
-      let regexp = RegExp(query, 'i');
-      return dish.name.match(regexp) || dish.description.match(regexp);
-    });
+  filteredDishes() {
+    if (this.q.length > 0) {
+      return this.availableDishes().filter(dish => {
+        let regexp = RegExp(this.q, 'i');
+        return dish.name.match(regexp) || dish.description.match(regexp);
+      });
+    } else {
+      return [];
+    }
   }
 
-  availableDishes(){
-    if (this.isAdmin){
-      return this.dishes
+  availableDishes() {
+    if (this.isAdmin) {
+      return this.dishes;
     } else {
-      return this.dishes.filter(dish => dish.available)
+      return this.dishes.filter(dish => dish.available);
     }
   }
 

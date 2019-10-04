@@ -23,14 +23,14 @@
     Создать новое блюдо
   </button>
 </div>
-<div class="col-md-10 .d-block col-md-offset-1" *ngIf="!isLoading && filtered_dishes.length > 0">
+<div class="col-md-10 .d-block col-md-offset-1" *ngIf="!isLoading && q.length > 0">
   <ul class="menu" >
-    <app-dish *ngFor="let dish of filtered_dishes" [dish]="dish"> </app-dish>
+    <app-dish *ngFor="let dish of filteredDishes()" [dish]="dish"> </app-dish>
   </ul>
    <div id="modal-container" class="hidden overflow-auto"></div>
   <div id="overlay" (click)="removeModal()" class="hidden"></div>
 </div>
-<div class="col-md-10 .d-block col-md-offset-1" *ngIf="!isLoading && filtered_dishes.length===0">
+<div class="col-md-10 .d-block col-md-offset-1" *ngIf="!isLoading && q.length===0">
   <div *ngIf="!isLoading">
     <h3 id="soups" *ngIf="getSoups().length > 0">Супы</h3>
   </div>

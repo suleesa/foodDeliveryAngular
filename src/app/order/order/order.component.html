@@ -10,7 +10,12 @@
     <div *ngIf="isAdmin">
       <label
         >Статус заказа:
-        <select #s (change)="changeStatus(s.value)" class="form-control" [ngModel]="order.status">
+        <select
+          #s
+          (change)="changeStatus(s.value)"
+          class="form-control"
+          [ngModel]="order.status"
+        >
           <option [value]="'waiting_confirmation'">
             Ожидает подтверждения</option
           >
@@ -21,19 +26,24 @@
       </label>
     </div>
     <div *ngIf="!isAdmin">Статус заказа: {{ checkStatus() }}</div>
-    <div class="card">
+    <div>
       <h4>Заказ</h4>
       <ul *ngFor="let countedDish of order.countedDishes">
         <li>
-          {{ countedDish.dish.name }} x{{countedDish.quantity}}
+          {{ countedDish.dish.name }} x{{ countedDish.quantity }}
           <ul *ngFor="let topping of countedDish.dish.toppings">
             <li>{{ topping.name }}</li>
           </ul>
         </li>
       </ul>
+      <div *ngIf='order.comments'>
+        <h5>Комментарий к заказу:</h5>
+        {{ order.comments }}
+      </div>
     </div>
-    <p>Общая сумма заказа: {{ order.totalPrice }} рублей</p>
+    <h4>Общая сумма заказа: {{ order.totalPrice }} рублей</h4>
   </div>
-  <button class='btn btn-primary' (click)='repeatOrder()'>Повторить заказ</button>
+  <button class="btn btn-primary" (click)="repeatOrder()">
+    Повторить заказ
+  </button>
 </div>
-

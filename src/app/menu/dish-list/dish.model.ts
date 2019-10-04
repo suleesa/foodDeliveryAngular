@@ -30,6 +30,6 @@ export class Dish {
     this.weight = weight;
     this.price = price;
     this.toppings = toppings;
-    this.available = this.available;
+    this.available = available;
   }
 }
