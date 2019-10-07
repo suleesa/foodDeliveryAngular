@@ -2,27 +2,56 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 200;
   width: 40%;
-
-  
 }
 
+.btn-toolbar{
+  margin-left:0;
+}
+.navbar-left li{
+  font-size: 20px;
+}
 .btn-primary.btn-lg,
-#menu {
+#menu, .navbar-left {
   margin-top: 10px;
-  // font-size: 20px;
+    margin-bottom: 10px;
+
+   font-size: 20px;
+}
+
+.btn-toolbar>.btn{
+  margin-left: 0;
+}
+
+.nav>li>a {
+  padding:10px 25px 10px 0;
+  @media (max-width: 767px) {
+    padding:10px 15px
+  }
+}
+
+.header{
+  height: 90px;
+  width:100%;
+  @media (max-width: 767px) {
+    display:none;
+  }
 }
 
 .navbar-default {
-  // box-shadow: 2px 0px 12px 2px #a9a6a6;
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-  // z-index: 101;
+  box-shadow: 2px 0px 12px 2px #a9a6a6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
 
-  // @media (max-width: 767px) {
-  //    height: 420px;
-  //    position: unset;
-  //  }
+  
+  @media (max-width: 767px) {
+    position: unset;
+
+  }
 }
+   // .header{
+   //  display: none
+   // }

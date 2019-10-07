@@ -1,4 +1,4 @@
-<div class="list-group-item col-sm-10">
+<div class="list-group-item col-sm-10" [class.new]='order.status === "waiting_confirmation"'>
   <div class="text-muted">
     Дата заказа {{ order.date | date: 'dd/MM/yyyy HH:mm' }}
   </div>

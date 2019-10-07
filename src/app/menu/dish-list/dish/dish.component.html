@@ -6,9 +6,11 @@
       <span class="slider round" ></span>
     </label>
   </div>
-    <img src="assets/img/edit.svg" class="item-edit" (click)="startEdit()" />
-    <img src="assets/img/cancel.svg" class="item-delete" (click)="confirm()" />
-  </div>
+<!--     <img src="assets/img/edit.svg" class="item-edit" (click)="startEdit()" />
+ -->    <div style="color:#ff5d40" class='glyphicon glyphicon-edit'  (click)="startEdit()" ></div>
+ <div style="color:#ff5d40" class='glyphicon glyphicon-remove'(click)="confirm()" ></div>
+<!--     <img src="assets/img/cancel.svg" class="item-delete" (click)="confirm()" />
+ -->  </div>
   <img src="{{ dish.imgPath }}" alt="dish" class="menu-item__img" />
   <div class="menu-item__name">{{ dish.name }}</div>
   <div class="menu-item__description">

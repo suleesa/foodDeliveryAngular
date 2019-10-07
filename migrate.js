@@ -226,7 +226,7 @@ dishes = [
         price: 70
       },
       {
-        name: 'пармезан',
+        name: 'Дор Блю',
         price: 70
       }
     ],
@@ -253,7 +253,7 @@ dishes = [
         price: 70
       },
       {
-        name: 'пармезан',
+        name: 'Дор Блю',
         price: 70
       }
     ],
@@ -280,7 +280,7 @@ dishes = [
         price: 70
       },
       {
-        name: 'пармезан',
+        name: 'Дор Блю',
         price: 70
       }
     ],
@@ -307,7 +307,7 @@ dishes = [
         price: 70
       },
       {
-        name: 'пармезан',
+        name: 'Дор Блю',
         price: 70
       }
     ],
@@ -334,7 +334,7 @@ dishes = [
         price: 70
       },
       {
-        name: 'пармезан',
+        name: 'Дор Блю',
         price: 70
       }
     ],

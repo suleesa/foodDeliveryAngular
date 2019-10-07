@@ -18,13 +18,13 @@
     </ul>
     <ul id="sections" *ngIf="!mainPage" class="nav navbar-nav navbar-left" id='start'>
       <li>
-        <a [routerLink]="['']" class="nav-link" ><h4>Меню</h4></a>
+        <a [routerLink]="['']" class="nav-link" >Меню</a>
       </li>
     </ul>
     <div class="btn-toolbar navbar-right">
       <ul class="nav navbar-nav navbar-left" *ngIf="isAuthenticated">
-        <li><a [routerLink]="['/adminOrders']" *ngIf="isAdmin"><h4>Заказы</h4></a></li>
-        <li><a [routerLink]="['/profile']"><h4>Личный кабинет</h4></a></li>
+        <li><a [routerLink]="['/adminOrders']" *ngIf="isAdmin">Заказы</a></li>
+        <li><a [routerLink]="['/profile']" class='profile'>Личный кабинет</a></li>
       </ul>
       <button
         class="header-top__login"
@@ -44,4 +44,5 @@
     </div>
   </div>
 </nav>
+<div class='header'></div>
 

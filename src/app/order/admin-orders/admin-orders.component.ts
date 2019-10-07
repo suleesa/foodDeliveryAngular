@@ -10,9 +10,11 @@ import { Order } from '../order.model';
 export class AdminOrdersComponent implements OnInit, OnDestroy {
   orders: Order[];
   refresh
+  isLoading:boolean = false;
   constructor(private orderService: OrderService) {}
 
   ngOnInit() {
+    this.isLoading = true
     this.refreshOrders();
     this.refresh = setInterval(() => this.refreshOrders(), 5000)
   }
@@ -21,6 +23,7 @@ export class AdminOrdersComponent implements OnInit, OnDestroy {
   refreshOrders(){
     this.orderService.getAllOrders().subscribe((orders: Order[]) => {
       this.orders = orders;
+      this.isLoading = false
       console.log('refresh')
     });
   }
