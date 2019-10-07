@@ -53,7 +53,8 @@ export class AutocompleteComponent implements OnInit, AfterViewInit {
     );
     google.maps.event.addListener(autocomplete, 'place_changed', () => {
       const place = autocomplete.getPlace();
-      // this.invokeEvent(place);
+      this.invokeEvent(place.formatted_address);
+      // console.log("google", place.formatted_address)
     });
   }
 
@@ -62,6 +63,7 @@ export class AutocompleteComponent implements OnInit, AfterViewInit {
   }
 
   changeAddress(event){
+    // console.log("change", event.target.value);
     this.setAddress.emit(event.target.value)
   }
 }

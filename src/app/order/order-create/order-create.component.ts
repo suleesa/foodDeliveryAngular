@@ -39,7 +39,7 @@ export class OrderCreateComponent implements OnInit {
     this.userSub = this.authService.user.subscribe(user => {
       if (user) {
         this.userId = user.id;
-        console.log(user);
+        // console.log(user);
         this.refreshProfile();
       }
     });
@@ -81,7 +81,7 @@ export class OrderCreateComponent implements OnInit {
       return;
     }
 
-    console.log(form.value.comments);
+    console.log(form.value.payment);
     let order = new Order(
       null,
       this.userId,
@@ -94,6 +94,7 @@ export class OrderCreateComponent implements OnInit {
       'waiting_confirmation',
       new Date(),
       form.value.comments,
+      form.value.payment,
       form.value.appartmentNumber
     );
     this.orderService.newOrder(order).subscribe(
@@ -103,7 +104,7 @@ export class OrderCreateComponent implements OnInit {
       },
 
       error => {
-        console.log(error);
+        // console.log(error);
         this.notificationService.setMessage(
           'К сожалению произошла ошибка, попробуйте еще раз'
         );

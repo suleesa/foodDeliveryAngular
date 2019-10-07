@@ -1,11 +1,21 @@
-<div class="list-group-item col-sm-10" [class.new]='order.status === "waiting_confirmation"'>
+<div
+  class="list-group-item col-sm-10"
+  [class.new]="order.status === 'waiting_confirmation'"
+>
   <div class="text-muted">
     Дата заказа {{ order.date | date: 'dd/MM/yyyy HH:mm' }}
   </div>
+  <div *ngIf="!isAdmin">
+    <h4>Статус заказа: {{ checkStatus() }}</h4>
+  </div>
+
   <h5>Имя клиента: {{ order.name }}</h5>
   <div class="card-text">
     <p>Телефон: {{ order.telephone }}</p>
-    <p>Адрес: {{ order.address }} <span> кв./офис:{{order.appartmentNumber}} </span></p>
+    <p>
+      Адрес: {{ order.address }}
+      <span> кв./офис:{{ order.appartmentNumber }} </span>
+    </p>
     <p>Количество гостей: {{ order.guestAmount }}</p>
     <div *ngIf="isAdmin">
       <label
@@ -25,24 +35,25 @@
         </select>
       </label>
     </div>
-    <div *ngIf="!isAdmin">Статус заказа: {{ checkStatus() }}</div>
     <div>
       <h4>Заказ</h4>
       <ul *ngFor="let countedDish of order.countedDishes">
         <li>
           {{ countedDish.dish.name }} x{{ countedDish.quantity }}
-          <ul *ngFor="let topping of countedDish.dish.toppings">
+          <ul *ngFor="let topping of countedDish.toppings">
             <li>{{ topping.name }}</li>
           </ul>
         </li>
       </ul>
-      <div *ngIf='order.comments'>
+      <div *ngIf="order.comments">
         <h5>Комментарий к заказу:</h5>
         {{ order.comments }}
       </div>
     </div>
     <h4>Общая сумма заказа: {{ order.totalPrice }} рублей</h4>
+    <div>Оплата {{ order.payment }}</div>
   </div>
+
   <button class="btn btn-primary" (click)="repeatOrder()">
     Повторить заказ
   </button>

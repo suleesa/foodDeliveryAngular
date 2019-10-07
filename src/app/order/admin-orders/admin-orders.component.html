@@ -3,8 +3,8 @@
 <div *ngIf="isLoading">
   <app-spinner></app-spinner>
 </div>
-<!-- <a
+<a
   class="arrow btn btn-warning glyphicon glyphicon-arrow-up"
   routerLink="/adminOrders" fragment='start'
-></a> -->
+></a>
 <app-order-list [orders]="orders"></app-order-list>

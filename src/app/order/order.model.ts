@@ -12,6 +12,7 @@ export class Order {
   public status: string;
   public date: Date;
   public comments:string;
+  public payment:string;
   public appartmentNumber?:string
 
   constructor(
@@ -26,7 +27,8 @@ export class Order {
     status: string,
     date: Date,
     comments:string,
-    appartmentNumber:string
+    payment:string,
+    appartmentNumber:string,
   ) {
     this.id = id;
     this.userId = userId;
@@ -39,6 +41,7 @@ export class Order {
     this.status = status;
     this.date = date;
     this.comments = comments;
+    this.payment = payment;
     this.appartmentNumber = appartmentNumber
   }
 }

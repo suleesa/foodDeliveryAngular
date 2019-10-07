@@ -47,7 +47,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
     );
 
     this.refreshOrders()
-    this.refresh = setInterval(() => this.refreshOrders(), 5000)
+    this.refresh = setInterval(() => this.refreshOrders(), 8000)
   }
 
   refreshOrders(){
@@ -59,7 +59,6 @@ export class ProfileComponent implements OnInit, OnDestroy {
   }
 
   setAddress(event) {
-    console.log(event);
     this.profile.userAddress = event
   }
 

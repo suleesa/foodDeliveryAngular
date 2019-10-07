@@ -16,7 +16,7 @@ export class AdminOrdersComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.isLoading = true
     this.refreshOrders();
-    this.refresh = setInterval(() => this.refreshOrders(), 5000)
+    this.refresh = setInterval(() => this.refreshOrders(), 8000)
   }
 
 

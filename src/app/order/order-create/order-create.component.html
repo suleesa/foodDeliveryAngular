@@ -25,11 +25,11 @@
           class="form-control"
         />
       </div>
-     <p>
+      <p>
         <AutocompleteComponent
           (setAddress)="setAddress($event)"
           adressType="address"
-          [autocompleteInput]='profile.userAddress'
+          [autocompleteInput]="profile.userAddress"
         ></AutocompleteComponent>
       </p>
 
@@ -40,7 +40,7 @@
           id="appartmentNumber"
           class="form-control"
           [ngModel]="profile.userappartmentNumber"
-        >
+        />
       </div>
       <div class="form-group">
         <label for="comments">Комментарий к заказу</label>
@@ -53,6 +53,7 @@
         ></textarea>
       </div>
       <p>Количество персон</p>
+     
       <div class="btn-toolbar">
         <div class="btn-group">
           <button
@@ -70,6 +71,14 @@
             (click)="increaseAmountGuest()"
           ></button>
         </div>
+      </div>
+       <div class="form-group payment">
+        <label for='payment'>Способ оплаты</label>
+        <select class="form-control"
+                name='payment' id='payment' ngModel required>
+          <option> наличными</option>
+          <option> по банковской карте</option>
+        </select>
       </div>
       <h3>Ваш заказ</h3>
       <ol *ngFor="let dish of countedDishes" class="list-group">
@@ -123,7 +132,11 @@
         <button
           type="submit"
           class="btn btn-primary btn-lg"
-          [disabled]="!orderForm.valid || totalPrice === 0 || profile.userAddress.length === 0"
+          [disabled]="
+            !orderForm.valid ||
+            totalPrice === 0 ||
+            profile.userAddress.length === 0
+          "
         >
           Заказать
         </button>

@@ -1,8 +1,11 @@
+.arrow {
+  top: 100px;
+  right: 20px;
+  position: fixed;
+  display: none;
+  z-index: 158;
 
-
-.arrow{
-    top:100px;
-    right: 20px;
-    position: fixed;
-    z-index: 200;
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
 }
