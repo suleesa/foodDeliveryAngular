@@ -25,17 +25,22 @@
           class="form-control"
         />
       </div>
+     <p>
+        <AutocompleteComponent
+          (setAddress)="setAddress($event)"
+          adressType="address"
+          [autocompleteInput]='profile.userAddress'
+        ></AutocompleteComponent>
+      </p>
+
       <div class="form-group">
-        <label for="address">Адрес</label>
-        <textarea
-          type="text"
-          name="address"
-          id="address"
+        <label for="appartmentNumber"> номер квартиры/офиса </label>
+        <input
+          name="appartmentNumber"
+          id="appartmentNumber"
           class="form-control"
-          required
-          minlength="6"
-          [ngModel]="profile.userAddress"
-        ></textarea>
+          [ngModel]="profile.userappartmentNumber"
+        >
       </div>
       <div class="form-group">
         <label for="comments">Комментарий к заказу</label>
@@ -107,7 +112,7 @@
           <button
             (click)="deleteDish(dish.dish)"
             type="button"
-            class="btn btn-danger"
+            class="btn btn-danger deleteBtn"
           >
             Удалить
           </button>
@@ -118,7 +123,7 @@
         <button
           type="submit"
           class="btn btn-primary btn-lg"
-          [disabled]="!orderForm.valid || totalPrice === 0"
+          [disabled]="!orderForm.valid || totalPrice === 0 || profile.userAddress.length === 0"
         >
           Заказать
         </button>

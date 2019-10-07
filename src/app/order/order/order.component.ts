@@ -61,6 +61,8 @@ export class OrderComponent implements OnInit {
       resp => {
         console.log(resp);
         this.notificationService.setMessage('Ваш заказ успешно оформлен')
+        
       })
   }
+
 }

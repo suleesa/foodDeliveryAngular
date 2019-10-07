@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 import { OrderService } from '../order.service';
 import { Profile } from '../../profile/profile.model';
 import { ProfileService } from '../../profile/profile.service';
-import { NotificationService } from '../../shared/notification.service'
+import { NotificationService } from '../../shared/notification.service';
 
 @Component({
   selector: 'app-order-create',
@@ -30,7 +30,7 @@ export class OrderCreateComponent implements OnInit {
     private authService: AuthService,
     private router: Router,
     private profileService: ProfileService,
-    private notificationService:NotificationService
+    private notificationService: NotificationService
   ) {}
 
   ngOnInit() {
@@ -40,11 +40,11 @@ export class OrderCreateComponent implements OnInit {
       if (user) {
         this.userId = user.id;
         console.log(user);
-        this.refreshProfile()
+        this.refreshProfile();
       }
     });
 
-   this.refreshProfile()
+    this.refreshProfile();
   }
 
   refreshProfile() {
@@ -54,6 +54,10 @@ export class OrderCreateComponent implements OnInit {
       }
       this.isLoading = false;
     });
+  }
+  setAddress(event) {
+    console.log(event);
+    this.profile.userAddress = event;
   }
 
   refreshPrice() {
@@ -77,33 +81,35 @@ export class OrderCreateComponent implements OnInit {
       return;
     }
 
-    console.log(form.value.comments)
+    console.log(form.value.comments);
     let order = new Order(
       null,
       this.userId,
       form.value.name,
       form.value.telephone,
-      form.value.address,
+      this.profile.userAddress,
       this.countedDishes,
       this.guestAmount,
       this.cartService.calculateTotalPrice(),
       'waiting_confirmation',
       new Date(),
-      form.value.comments
+      form.value.comments,
+      form.value.appartmentNumber
     );
-    this.orderService
-      .newOrder(order)
-      .subscribe(
-        resp => {
-          this.router.navigate([''])
-          this.notificationService.setMessage("Ваш заказ успешно оформлен")},
+    this.orderService.newOrder(order).subscribe(
+      resp => {
+        this.router.navigate(['']);
+        this.notificationService.setMessage('Ваш заказ успешно оформлен');
+      },
 
-        error => {
-          console.log(error)
-          this.notificationService.setMessage("К сожалению произошла ошибка, попробуйте еще раз")}
-        
-      );
+      error => {
+        console.log(error);
+        this.notificationService.setMessage(
+          'К сожалению произошла ошибка, попробуйте еще раз'
+        );
+      }
+    );
     form.reset();
-    this.cartService.resetCart()
+    this.cartService.resetCart();
   }
 }

@@ -24,17 +24,22 @@
 					placeholder="Иван Иванов"
 				/>
 			</div>
+			<p>
+				<AutocompleteComponent
+					(setAddress)="setAddress($event)"
+					adressType="address"
+					[autocompleteInput]='profile.userAddress'
+				></AutocompleteComponent>
+			</p>
+
 			<div class="form-group">
-				<label for="address"> Адрес </label>
-				<textarea
-					name="address"
-					id="address"
+				<label for="address"> номер квартиры/офиса </label>
+				<input
+					name="appartmentNumber"
+					id="appartmentNumber"
 					class="form-control"
-					[ngModel]="profile.userAddress"
-					required
-					minlength="6"
-					placeholder="Санкт-Петербург, Дворцовая площадь д.1"
-				></textarea>
+					[ngModel]="profile.userappartmentNumber"
+				>
 			</div>
 			<div class="form-group">
 				<label for="telephone"> Телефон </label>
@@ -51,7 +56,7 @@
 			<button
 				type="submit"
 				class="btn btn-primary"
-				[disabled]="!personalForm.valid"
+				[disabled]="!personalForm.valid || profile.userAddress.length === 0"
 			>
 				Сохранить
 			</button>

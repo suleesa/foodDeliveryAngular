@@ -14,7 +14,6 @@ export class ProfileService {
 	) {}
 
 	saveProfile(userId: string, profile: Profile) {
-		console.log('smth wrong');
 		this.http
 			.put(
 				'https://my-first-project-ea1d8.firebaseio.com/profiles/' +

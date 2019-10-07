@@ -5,7 +5,7 @@
   <h5>Имя клиента: {{ order.name }}</h5>
   <div class="card-text">
     <p>Телефон: {{ order.telephone }}</p>
-    <p>Адрес: {{ order.address }}</p>
+    <p>Адрес: {{ order.address }} <span> кв./офис:{{order.appartmentNumber}} </span></p>
     <p>Количество гостей: {{ order.guestAmount }}</p>
     <div *ngIf="isAdmin">
       <label

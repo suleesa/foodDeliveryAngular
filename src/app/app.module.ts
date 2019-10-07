@@ -24,6 +24,7 @@ import { ConfirmComponent } from './shared/confirm/confirm.component';
 import { OrderListComponent } from './order/order-list/order-list.component';
 import { OrderComponent } from './order/order/order.component';
 import { AdminOrdersComponent } from './order/admin-orders/admin-orders.component';
+import { AutocompleteComponent } from './shared/google-places/google-places.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AdminOrdersComponent } from './order/admin-orders/admin-orders.componen
     ConfirmComponent,
     OrderListComponent,
     OrderComponent,
-    AdminOrdersComponent
+    AdminOrdersComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,8 @@ export class Order {
   public totalPrice: number;
   public status: string;
   public date: Date;
-  public comments:string
+  public comments:string;
+  public appartmentNumber?:string
 
   constructor(
     id: string,
@@ -24,7 +25,8 @@ export class Order {
     totalPrice: number,
     status: string,
     date: Date,
-    comments:string
+    comments:string,
+    appartmentNumber:string
   ) {
     this.id = id;
     this.userId = userId;
@@ -36,6 +38,7 @@ export class Order {
     this.totalPrice = totalPrice;
     this.status = status;
     this.date = date;
-    this.comments = comments
+    this.comments = comments;
+    this.appartmentNumber = appartmentNumber
   }
 }

@@ -9,6 +9,7 @@ export class Profile{
 	 	public userName:string,
 		public userTelephone:number,
 		public userAddress:string,
-		public userID:string
+		public userID:string,
+    public userappartmentNumber?:string
 ){}
 }

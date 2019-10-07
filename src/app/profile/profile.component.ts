@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Profile } from './profile.model';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
@@ -11,17 +11,18 @@ import { Order } from '../order/order.model';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent implements OnInit, OnDestroy {
   profile: Profile = new Profile(null, null, null, null);
   userSub: Subscription;
   userId: string = null;
   isLoading = false;
-  orders: Order[] =[];
+  orders: Order[] = [];
+  refresh
 
   constructor(
     private authService: AuthService,
     private profileService: ProfileService,
-    private orderService: OrderService,
+    private orderService: OrderService
   ) {}
 
   ngOnInit() {
@@ -45,11 +46,21 @@ export class ProfileComponent implements OnInit {
       }
     );
 
+    this.refreshOrders()
+    this.refresh = setInterval(() => this.refreshOrders(), 5000)
+  }
+
+  refreshOrders(){
     this.orderService
       .getUserOrders(this.userId)
       .subscribe((orders: Order[]) => {
         this.orders = orders;
       });
+  }
+
+  setAddress(event) {
+    console.log(event);
+    this.profile.userAddress = event
   }
 
   onSubmit(form) {
@@ -59,11 +70,22 @@ export class ProfileComponent implements OnInit {
     let newProfile = new Profile(
       form.value.name,
       form.value.telephone,
-      form.value.address,
-      this.userId
+      this.profile.userAddress,
+      this.userId,
+      form.value.appartmentNumber
     );
-      this.profileService.saveProfile(this.userId, newProfile);
-  
+    this.profileService.saveProfile(this.userId, newProfile);
+    console.log(
+      form.value.name,
+      form.value.telephone,
+      this.profile.userAddress,
+      this.userId,
+      form.value.appartmentNumber
+    );
   }
 
+
+  ngOnDestroy(){
+    clearInterval(this.refresh)
+  }
 }
